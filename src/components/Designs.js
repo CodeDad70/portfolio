@@ -6,8 +6,8 @@ class Design extends Component {
     return (
       
         <div className='design-stage'>
+          <h1>Designs</h1>
 
-          
       </div>
     )
   }

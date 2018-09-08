@@ -6,7 +6,7 @@ class Projects extends Component {
     return (
       
         <div className='design-stage'>
-
+          <h1>Projects</h1>
           
       </div>
     )
