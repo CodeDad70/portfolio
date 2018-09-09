@@ -5,7 +5,7 @@ class Design extends Component {
   render() {
     return (
       
-        <div className='design-stage'>
+        <div className='designs-stage'>
           <h1>Designs</h1>
 
       </div>
