@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
-import './styles/App.css';
+// import './styles/App.css';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import Nav from './components/Nav'
 import Projects from './components/Projects';
 import Designs from './components/Designs'
-import './styles/Animation-styles.css'
+import './styles/styles.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-      <Router>
-      <Route
+const App = () => (
+  <Router>
+    <Route
       render={({ location, ...rest }) => (
         <div className="fill">
-          <Route exact path="/" render={() => <Redirect to="/red" />} />
+          <Route exact path="/" render={() => <Redirect to="/projects" />} />
           <ul className="nav">
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/designs">Designs</NavLink>
@@ -43,17 +40,13 @@ class App extends Component {
     />
   </Router>
 )
-        </Router>
-      </div>
-    );
-  }
-}
-
 
 const NavLink = props => (
   <li className="navItem">
     <Link {...props} style={{ cursor: 'pointer', color: 'inherit' }} />
   </li>
 )
+
+
 
 export default App;
