@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Projects from './components/Projects';
 import Designs from './components/Designs'
 import Contact from './components/Contact'
+import Welcome from './components/Welcome'
 import './styles/Animation-styles.css'
 
 const App = () => (
@@ -14,8 +15,8 @@ const App = () => (
     <Route
       render={({ location, ...rest }) => (
         <div className="fill">
-          <Route exact path="/" render={() => <Redirect to="/projects" />} />
-          <ul className="nav">
+          <Route exact path="/" render={() => <Redirect to="/welcome" />} />
+          <ul className="nav">   
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/designs">Designs</NavLink>
             <NavLink to="/contact">Contact</NavLink>
@@ -30,6 +31,7 @@ const App = () => (
               leave={{ transform: 'translateY(500px)', opacity: 0 }}>
               {style => (
                 <Switch location={location}>
+                  <Route path="/welcome" render={props => Welcome({ ...props, style })} />
                   <Route path="/projects" render={props => Projects({ ...props, style })} />
                   <Route path="/designs" render={props => Designs({ ...props, style })} />
                   <Route path="/contact" render={props => Contact({ ...props, style })} />
