@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Nav from './components/Nav'
 import Projects from './components/Projects';
 import Designs from './components/Designs'
-import About from './components/About'
+import Contact from './components/Contact'
 import './styles/Animation-styles.css'
 
 const App = () => (
@@ -18,7 +18,7 @@ const App = () => (
           <ul className="nav">
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/designs">Designs</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </ul>
           <div className="content">
             <Transition
@@ -32,7 +32,7 @@ const App = () => (
                 <Switch location={location}>
                   <Route path="/projects" render={props => Projects({ ...props, style })} />
                   <Route path="/designs" render={props => Designs({ ...props, style })} />
-                  <Route path="/about" render={props => About({ ...props, style })} />
+                  <Route path="/contact" render={props => Contact({ ...props, style })} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
               )}

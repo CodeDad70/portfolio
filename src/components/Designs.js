@@ -24,7 +24,10 @@ const Designs = ({ style }) => (
       )}
     />
   </animated.div>
+
 )
+
+
 
 
 export default Designs;

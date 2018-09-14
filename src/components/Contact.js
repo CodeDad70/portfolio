@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 
-const About = ({ style }) => (
+const Contact = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
     <div className="mainRouteItem">
-      <p>About</p>
+      <p>Contact</p>
      
     </div>
     <Route
@@ -27,4 +27,4 @@ const About = ({ style }) => (
 )
 
 
-export default About;
+export default Contact;
