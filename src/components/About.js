@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 
-const Designs = ({ style }) => (
+const About = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
     <div className="mainRouteItem">
       <p>About</p>
