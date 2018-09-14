@@ -5,7 +5,7 @@ import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-route
 const Designs = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
     <div className="mainRouteItem">
-      <p>Designs</p>
+      <p>About</p>
      
     </div>
     <Route
@@ -27,4 +27,4 @@ const Designs = ({ style }) => (
 )
 
 
-export default Designs;
+export default About;
