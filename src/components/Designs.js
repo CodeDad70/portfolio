@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import Designslides from './Designslides'
 
 const Designs = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
     <div className="mainRouteItem">
       <p>Designs</p>
+      <Link to={'/designslides'}> Test</Link>
+      
      
     </div>
     <Route
