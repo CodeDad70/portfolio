@@ -145,3 +145,13 @@
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
+
+.direction {
+
+  margin-left: 350px;
+  font-size: 40px;
+  color: white;
+
+
+}
+
