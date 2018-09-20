@@ -5,14 +5,15 @@ import { Parallax } from 'react-spring'
 
 
 
-const Page = ({ offset, caption, first, second, gradient, onClick }) => (
+const Page = ({ offset, caption, first, second, gradient, background, onClick }) => (
   <React.Fragment>
+    
     <Parallax.Layer offset={offset} speed={0.2} onClick={onClick}>
       <div className="slopeBegin" />
     </Parallax.Layer>
 
     <Parallax.Layer offset={offset} speed={-0.2} onClick={onClick}>
-      <div className={`slopeEnd ${gradient}`} />
+      <div className={`slopeEnd ${background}`} />
     </Parallax.Layer>
 
     <Parallax.Layer className="text number" offset={offset} speed={0.3}>
@@ -35,9 +36,11 @@ class Designslides extends React.Component {
   render() {
     return (
       <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
-        <Page offset={0} gradient="pink" caption="First Slide" first="Lorem ipsum" second="dolor sit" onClick={() => this.scroll(1)} />
-        <Page offset={1} gradient="teal" caption="Second Slide" first="consectetur" second="adipiscing elit" onClick={() => this.scroll(2)} />
-        <Page offset={2} gradient="tomato" caption="Third Slide" first="Morbi quis" second="est dignissim" onClick={() => this.scroll(0)} />
+        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Lorem ipsum" second="dolor sit" navbox = "test" onClick={() => this.scroll(1)} />
+        
+        <Page offset={1} gradient="teal" background = "blue" caption="Second Slide" first="consectetur" second="adipiscing elit" onClick={() => this.scroll(2)} />
+        
+        <Page offset={2} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" onClick={() => this.scroll(0)} />
       </Parallax>
     )
   }
