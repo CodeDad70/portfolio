@@ -7,17 +7,17 @@ import { Parallax } from 'react-spring'
 
 const Page = ({ offset, caption, first, second, gradient, background, onClickForward, onClickBack }) => (
   <React.Fragment>
-    
+   
     <Parallax.Layer offset={offset} speed={0.2} >
-      <div className="slopeBegin" />
+      <div className={`slopeBegin ${background}`} />
      
     </Parallax.Layer>
 
     
-
+    
     <Parallax.Layer offset={offset} speed={-0.2} >
       <div className={`slopeEnd ${background}`} />
-    </Parallax.Layer>
+    </Parallax.Layer> 
 
     
 
@@ -41,15 +41,16 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
     </Parallax.Layer>
 
       <Parallax.Layer offset={offset} speed={0.2} >
-      <div className="text-nav" >     
+      <div>
+      
       {offset!==0 &&     
-      <button  className = 'button-style' onClick={onClickBack}>Back</button>
+      <div className = 'arrow-left' onClick={onClickBack}>Back</div>
       }
       {offset!==2 &&
-      <button className = 'button-style' onClick={onClickForward}>Forward</button>
+      <div className = 'arrow-right' onClick={onClickForward}>Forward</div>
       }
       {offset===2 &&
-      <button className = 'button-style' onClick={onClickForward}>Start Over</button>
+      <div className = 'arrow-left' onClick={onClickForward}>Start Over</div>
       }
 
       </div>
@@ -62,8 +63,8 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={true}>
-        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Lorem ipsum" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+      <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
+        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Huh" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         <Page offset={1} gradient="teal" background = "blue" caption="Second Slide" first="consectetur" second="adipiscing elit" onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
 

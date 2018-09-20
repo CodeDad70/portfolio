@@ -10,7 +10,8 @@
     "react-routes": "^0.2.6",
     "react-scripts": "1.1.5",
     "react-spring": "^5.7.2",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "yarn": "^1.9.4"
   },
   "scripts": {
     "start": "react-scripts start",
