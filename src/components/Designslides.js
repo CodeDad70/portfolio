@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 import { Parallax } from 'react-spring'
+import Icon from '@mdi/react';
+import { mdiRestart } from '@mdi/js';
+import { mdiArrowRightBold } from '@mdi/js';
+// import { mdiArrowLeftBold } from '@mdi/js';
 
 
 
@@ -43,14 +47,17 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
       <Parallax.Layer offset={offset} speed={0.2} >
       <div>
       
+      
       {offset!==0 &&     
-      <div className = 'arrow-left' onClick={onClickBack}>Back</div>
+      <Icon path={mdiArrowRightBold} className = "arrow" size={2} horizontal vertical rotate={90} color="white" onClick={onClickBack}/>
+      
       }
       {offset!==2 &&
-      <div className = 'arrow-right' onClick={onClickForward}>Forward</div>
+      
+      <Icon path={mdiArrowRightBold} className = "arrow" size={2} horizontal vertical rotate={180} color="white" onClick={onClickForward}/>
       }
       {offset===2 &&
-      <div className = 'arrow-left' onClick={onClickForward}>Start Over</div>
+      <Icon path={mdiRestart} size={2} className = "arrow" horizontal vertical rotate={90} color="white" onClick={onClickForward}/>
       }
 
       </div>

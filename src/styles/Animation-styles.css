@@ -148,26 +148,13 @@ a:hover {
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
 
-.arrow-right {
+
+.arrow {
+  opacity: .5;
   
-    width: 0; 
-    height: 0; 
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    
-    border-left: 60px solid rgb(243, 245, 243);
-  
-  
-  
-    cursor:pointer;
-   
 }
 
-.arrow-left {
-  width: 0; 
-  height: 0; 
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent; 
-  
-  border-right:60px solid rgb(255, 255, 255); 
+
+.arrow:hover {
+  opacity: 1;
 }
