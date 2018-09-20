@@ -4,10 +4,7 @@ import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-route
 import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
-import { mdiArrowRightBold } from '@mdi/js';
-// import { mdiArrowLeftBold } from '@mdi/js';
-
-
+import { mdiArrowRightThick } from '@mdi/js';
 
 const Page = ({ offset, caption, first, second, gradient, background, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -19,24 +16,24 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
 
     
     
-    <Parallax.Layer offset={offset} speed={-0.2} >
+    {/* <Parallax.Layer offset={offset} speed={-0.2} >
       <div className={`slopeEnd ${background}`} />
     </Parallax.Layer> 
 
-    
+     */}
 
-    <Parallax.Layer className="text number" offset={offset} speed={0.5}>
+    {/* <Parallax.Layer className="text number" offset={offset} speed={0.5}>
       <span>0{offset + 1}</span>
-    </Parallax.Layer>
+    </Parallax.Layer> */}
 
-    <Parallax.Layer className="text header" offset={offset} speed={0.4}>
+    <Parallax.Layer className="text headline" offset={offset} speed={0.4}>
       <span>
-        <p style={{ fontSize: 20 }}>{caption}</p>
+        <p >{caption}</p>
         <div className={`stripe ${gradient}`} />
       </span>
     </Parallax.Layer>
 
-     <Parallax.Layer className="text header" offset={offset} speed={0.6}>
+     <Parallax.Layer className="text copy " offset={offset} speed={0.6}>
       <span>
        
         <p>{first}</p>
@@ -49,15 +46,15 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
       
       
       {offset!==0 &&     
-      <Icon path={mdiArrowRightBold} className = "arrow" size={2} horizontal vertical rotate={90} color="white" onClick={onClickBack}/>
+      <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color="white" onClick={onClickBack}/>
       
       }
       {offset!==2 &&
       
-      <Icon path={mdiArrowRightBold} className = "arrow" size={2} horizontal vertical rotate={180} color="white" onClick={onClickForward}/>
+      <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color="white" onClick={onClickForward}/>
       }
       {offset===2 &&
-      <Icon path={mdiRestart} size={2} className = "arrow" horizontal vertical rotate={90} color="white" onClick={onClickForward}/>
+      <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color="white" onClick={onClickForward}/>
       }
 
       </div>
