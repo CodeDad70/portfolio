@@ -19,11 +19,7 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
       <div className={`slopeEnd ${background}`} />
     </Parallax.Layer>
 
-     <Parallax.Layer offset={offset} speed={0.2} >
-      <div className="text-nav" />
-      <button  onClick={onClickForward}>Forward</button>
-      <button  onClick={onClickBack}>Back</button>
-    </Parallax.Layer>
+    
 
     <Parallax.Layer className="text number" offset={offset} speed={0.5}>
       <span>0{offset + 1}</span>
@@ -45,12 +41,18 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
     </Parallax.Layer>
 
       <Parallax.Layer offset={offset} speed={0.2} >
-      <div className="text-nav" />
-      
+      <div className="text-nav" >     
+      {offset!==0 &&     
       <button  className = 'button-style' onClick={onClickBack}>Back</button>
-
+      }
+      {offset!==2 &&
       <button className = 'button-style' onClick={onClickForward}>Forward</button>
-      
+      }
+      {offset===2 &&
+      <button className = 'button-style' onClick={onClickForward}>Start Over</button>
+      }
+
+      </div>
     </Parallax.Layer>
     
   </React.Fragment>
