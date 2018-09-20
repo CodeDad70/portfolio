@@ -5,7 +5,7 @@ import { Parallax } from 'react-spring'
 
 
 
-const Page = ({ offset, caption, first, second, gradient, background, onClickForward, onClickBack, direction }) => (
+const Page = ({ offset, caption, first, second, gradient, background, onClickForward, onClickBack }) => (
   <React.Fragment>
     
     <Parallax.Layer offset={offset} speed={0.2} >
@@ -25,27 +25,32 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
       <button  onClick={onClickBack}>Back</button>
     </Parallax.Layer>
 
-    <Parallax.Layer className="text number" offset={offset} speed={0.3}>
+    <Parallax.Layer className="text number" offset={offset} speed={0.5}>
       <span>0{offset + 1}</span>
     </Parallax.Layer>
 
     <Parallax.Layer className="text header" offset={offset} speed={0.4}>
       <span>
-      
         <p style={{ fontSize: 20 }}>{caption}</p>
-        <div className={`direction`}>{direction}</div>
         <div className={`stripe ${gradient}`} />
-        <p>{first}</p>
-        <p>{second}</p>
-        
+      </span>
+    </Parallax.Layer>
+
+     <Parallax.Layer className="text header" offset={offset} speed={0.6}>
+      <span>
        
+        <p>{first}</p>
+        <p>{second}</p> 
       </span>
     </Parallax.Layer>
 
       <Parallax.Layer offset={offset} speed={0.2} >
       <div className="text-nav" />
-      <button  onClick={onClickForward}>Forward</button>
-      <button  onClick={onClickBack}>Back</button>
+      
+      <button  className = 'button-style' onClick={onClickBack}>Back</button>
+
+      <button className = 'button-style' onClick={onClickForward}>Forward</button>
+      
     </Parallax.Layer>
     
   </React.Fragment>
@@ -56,11 +61,11 @@ class Designslides extends React.Component {
   render() {
     return (
       <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={true}>
-        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Lorem ipsum" second="dolor sit" direction = "forward" onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Lorem ipsum" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} gradient="teal" background = "blue" caption="Second Slide" first="consectetur" second="adipiscing elit" direction = "forward" onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} gradient="teal" background = "blue" caption="Second Slide" first="consectetur" second="adipiscing elit" onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
 
-        <Page offset={2} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" direction = "Back" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
+        <Page offset={2} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
         
       </Parallax>
     )

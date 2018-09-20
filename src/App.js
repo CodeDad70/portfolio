@@ -32,12 +32,12 @@ const App = () => (
               leave={{ transform: 'translateY(500px)', opacity: 0 }}>
               {style => (
                 <Switch location={location}>
-                  <Route path="/welcome" render={props => Welcome({ ...props, style })} />
                   <Route path="/designslides" component={Designslides} />
+                  <Route path="/welcome" render={props => Welcome({ ...props, style })} />
                   <Route path="/projects" render={props => Projects({ ...props, style })} />
                   <Route path="/designs" render={props => Designs({ ...props, style })} />
                   <Route path="/contact" render={props => Contact({ ...props, style })} />
-                  <Route render={() => <div>Not Found</div>} />
+                  
                 </Switch>
               )}
             </Transition>
