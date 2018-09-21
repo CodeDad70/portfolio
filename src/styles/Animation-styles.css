@@ -81,57 +81,30 @@ a:hover {
   pointer-events: none;
   justify-content: start !important;
   font-family: 'Kanit', sans-serif;
-  line-height: 0px;
+  line-height: 5px;
   
   
 }
-
-.number {
-  font-size: 2em;
-  color: #373c4c;
-}
-
-/* .number span {
-  display: inline-block;
-  position: relative;
-  transform: translate3d(-35%, 0, 0);
-} */
 
 .headline {
   margin-left: 150px;
   font-size: 40px;
   color: white;
   text-transform: uppercase;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .copy {
   margin-left: 150px;
   font-size: 20px;
   color: white;
-  margin-top: 60px
+  margin-top: 75px
 }
-
-.stripe {
-  height: 2px;
-  width: auto;
-  margin-top: 10px
-}
-
  
-.slopeBegin {
+.layerBackground {
   position: absolute;
   width: 140%;
   height: 100%;
-  cursor: pointer;
-} 
-
-
-.slopeEnd {
-  position: absolute;
-  width: 140%;
-  height: 100%;
-  cursor: pointer;
 } 
 
 .red {

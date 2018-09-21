@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './styles/App.css';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 import Header from './components/Header'

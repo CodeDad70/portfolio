@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Transition, config, animated } from 'react-spring'
-import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
@@ -10,44 +8,30 @@ const Page = ({ offset, caption, first, second, gradient, background, onClickFor
   <React.Fragment>
    
     <Parallax.Layer offset={offset} speed={0.2} >
-      <div className={`slopeBegin ${background}`} />
+      <div className={`layerBackground ${background}`} />
      
     </Parallax.Layer>
 
-    
-    
-    {/* <Parallax.Layer offset={offset} speed={-0.2} >
-      <div className={`slopeEnd ${background}`} />
-    </Parallax.Layer> 
-
-     */}
-
-    {/* <Parallax.Layer className="text number" offset={offset} speed={0.5}>
-      <span>0{offset + 1}</span>
-    </Parallax.Layer> */}
-
-    <Parallax.Layer className="text headline" offset={offset} speed={0.4}>
-      <span>
+    <Parallax.Layer className="text headline" horizontal offset={offset} speed={0.9}>
+      <div>
         <p >{caption}</p>
-        <div className={`stripe ${gradient}`} />
-      </span>
+      </div>
     </Parallax.Layer>
 
-     <Parallax.Layer className="text copy " offset={offset} speed={0.6}>
-      <span>
-       
+     <Parallax.Layer className="text copy " horizontal offset={offset} speed={0.6}>
+      <div>
         <p>{first}</p>
         <p>{second}</p> 
-      </span>
+      </div>
     </Parallax.Layer>
 
-      <Parallax.Layer offset={offset} speed={0.2} >
+      <Parallax.Layer offset={offset} speed={0.4} >
       <div>
       
       
       {offset!==0 &&     
       <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color="white" onClick={onClickBack}/>
-      
+ 
       }
       {offset!==2 &&
       
