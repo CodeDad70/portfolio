@@ -15,7 +15,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, onClickFo
 
     <Parallax.Layer offset={offset} speed={0.2} >
      
-      <img className='image-frame' src={imagelink} /> alt="Timex Layout"/>
+      <img className='image-frame' src={imagelink} alt="Layout"/>
       
     </Parallax.Layer>
 
