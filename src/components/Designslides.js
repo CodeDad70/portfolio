@@ -61,7 +61,7 @@ class Designslides extends React.Component {
       <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
         <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Huh" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} gradient="teal" background = "blue" imagelink={timex} caption="Second Slide" first="consectetur" second="adipiscing elit" onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
 
         <Page offset={2} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
         
