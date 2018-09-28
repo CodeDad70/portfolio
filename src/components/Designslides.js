@@ -40,11 +40,11 @@ const Page = ({ offset, caption, first, second, background, imagelink, onClickFo
       <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color="white" onClick={onClickBack}/>
  
       }
-      {offset!==2 &&
+      {offset!==6 &&
       
       <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color="white" onClick={onClickForward}/>
       }
-      {offset===2 &&
+      {offset===6 &&
       <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color="white" onClick={onClickForward}/>
       }
 
@@ -58,12 +58,20 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <Parallax className="container" ref="parallax" pages={3} horizontal scrolling={false}>
+      <Parallax className="container" ref="parallax" pages={7} horizontal scrolling={false}>
         <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Huh" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         <Page offset={1} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        
+        <Page offset={2} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
 
-        <Page offset={2} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
+        <Page offset={3} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
+
+        <Page offset={4} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
+
+        <Page offset={5} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(6)} onClickBack={() => this.scroll(4)} />
+
+        <Page offset={6} gradient="tomato" background = "green" caption="Third Slide" first="Morbi quis" second="est dignissim" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(5)} />
         
       </Parallax>
     )
