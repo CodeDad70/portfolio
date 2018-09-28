@@ -4,6 +4,7 @@ import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
 import { mdiArrowRightThick } from '@mdi/js';
 import timex from '../images/timexwatch.jpg';
+import slideOneA from '../images/Slide-One-A.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -13,7 +14,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, onClickFo
      
     </Parallax.Layer>
 
-    <Parallax.Layer offset={offset} speed={0.2} >
+    <Parallax.Layer offset={offset} speed={0.2} className='slide-one'>
      
       <img className='image-frame' src={imagelink} alt="Layout"/>
       
@@ -59,7 +60,8 @@ class Designslides extends React.Component {
   render() {
     return (
       <Parallax className="container" ref="parallax" pages={7} horizontal scrolling={false}>
-        <Page offset={0} gradient="pink" background = "red" caption="Test One" first="Huh" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+
+        <Page offset={0} gradient="pink" background = "red" imagelink={slideOneA} caption="Test One" first="Huh" second="dolor sit"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         <Page offset={1} gradient="teal" background = "blue" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
