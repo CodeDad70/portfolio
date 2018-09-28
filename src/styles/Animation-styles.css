@@ -53,7 +53,7 @@ a:hover {
   top: 0px;
   height: 40px;
   display: flex;
-  background: linear-gradient(to right, deeppink 0%, coral 100%);
+  background: linear-gradient(to right, tomato 0%, gold 100%);
   z-index: 1;
 }
 
@@ -132,13 +132,15 @@ a:hover {
 /* text foramtting */
 
 .text {
+  
   pointer-events: none;
   justify-content: start !important;
   font-family: 'Kanit', sans-serif;  
 }
 
 .headline {
-  margin-left: 1%;
+  float:left;
+  padding-left:1%;
   font-size: .70em;
   color: rgb(38, 32, 75);
   text-transform: uppercase;
@@ -146,7 +148,8 @@ a:hover {
 }
 
 .copy {
-  margin-left: 1%;
+  float:left;
+  padding-left:1%;
   font-size: .30em;
   color: rgb(62, 59, 83);
   margin-top: .25%;
@@ -198,39 +201,51 @@ a:hover {
 }
 
 .frame-one {
-  object-fit:contain;
-  padding-top: 6%;
+  object-fit: contain;
   width:80%;
   height:80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .frame-two {
-  
+  object-fit:contain; 
   float:left;
-  
-  width:50%;
-  height:50%;
+  padding-left: 6%;
+  padding-top: 12%; 
+  width:70%;
+  height:70%;
 }
 
 .frame-three {
- 
-  padding-left: 50%;
-  width:25%;
-  margin-left: 5%;
-  height:25%;
+  object-fit:contain;
+  position: absolute;
+  float: right;
+  top: 6%;
+  right: 8%;
+  width:40%;
+  height:40%;
 }
 
 .frame-four {
-  object-fit:contain;
-  padding-top: 6%;
-  width:80%;
-  height:80%;
+  object-fit:contain; 
+  position: absolute;
+  
+  right: 8%;
+  top: 44%;
+  width:40%;
+  height:40%;
 }
 
 .frame-five {
   object-fit:contain;
-  padding-top: 6%;
-  width:80%;
-  height:80%;
+  position: absolute;
+  
+  top: 40%;
+  left: 70%;
+  width:35%;
+  height:35%;
 }
 
