@@ -5,8 +5,12 @@ import { mdiRestart } from '@mdi/js';
 import { mdiArrowRightThick } from '@mdi/js';
 import timex from '../images/timexwatch.jpg';
 import slideOneA from '../images/Slide-One-A.jpg'
+import slideTwoA from '../images/Slide-Two-A.jpg'
+import slideTwoB from '../images/Slide-Two-B.jpg'
+import slideTwoC from '../images/Slide-Two-C.jpg'
+import slideTwoD from '../images/Slide-Two-D.jpg'
 
-const Page = ({ offset, caption, first, second, background, imagelink, frame, onClickForward, onClickBack }) => (
+const Page = ({ offset, caption, first, second, background, imagelink, frameOne, frameTwo, frameThree, frameFour, onClickForward, onClickBack }) => (
   <React.Fragment>
    
     <Parallax.Layer offset={offset} speed={0.2} >
@@ -17,13 +21,13 @@ const Page = ({ offset, caption, first, second, background, imagelink, frame, on
     <Parallax.Layer offset={offset} speed={0.2} >
       <div>
         {offset===0 &&     
-         <img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/>
+         <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>
         }
 
-        {offset!==0 &&     
+        {offset===1 &&     
          <div>
-          <img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/>
-          <img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/>
+          <img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/>
+          <img className={`image-frame ${frameThree}`} src={imagelink} alt="Layout"/>
          </div>
         }
 
@@ -71,9 +75,9 @@ class Designslides extends React.Component {
     return (
       <Parallax className="container" ref="parallax" pages={7} horizontal scrolling={false}>
 
-        <Page offset={0} gradient="pink" background = "slide-one" frame = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publication"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} gradient="pink" background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publication"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} gradient="teal" background = "slide-two" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} gradient="teal" background = "slide-two" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-two" imagelink={slideTwoA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publication"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
         <Page offset={2} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
 
