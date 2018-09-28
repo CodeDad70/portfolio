@@ -12,28 +12,9 @@ import slideTwoD from '../images/Slide-Two-D.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, frameOne, frameTwo, frameThree, frameFour, onClickForward, onClickBack }) => (
   <React.Fragment>
-   
-    <Parallax.Layer offset={offset} speed={0.2} >
-      <div className={`layerBackground ${background}`} />
-     
-    </Parallax.Layer>
 
     <Parallax.Layer offset={offset} speed={0.2} >
-      <div>
-        {offset===0 &&     
-         <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>
-        }
-
-        {offset===1 &&     
-         <div>
-          <img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/>
-          <img className={`image-frame ${frameThree}`} src={imagelink} alt="Layout"/>
-         </div>
-        }
-
-
-
-      </div>
+      <div className={`layerBackground ${background}`} />    
     </Parallax.Layer>
 
     <Parallax.Layer className="text headline" horizontal offset={offset} speed={0.9}>
@@ -46,10 +27,27 @@ const Page = ({ offset, caption, first, second, background, imagelink, frameOne,
         <p>{second}</p> 
       </div>
     </Parallax.Layer>
-
-      <Parallax.Layer offset={offset} speed={0.4} >
-      <div>
+   
+     <Parallax.Layer offset={offset} speed={0.2}  >     
+      {offset===0 &&        
+       <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+      }  
+    </Parallax.Layer> 
       
+    <Parallax.Layer offset={offset} speed={0.5} >
+      {offset===1 &&
+        <div><img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/> </div> 
+      }
+    </Parallax.Layer>
+    
+    <Parallax.Layer offset={offset} speed={1} >
+      {offset===1 &&
+        <div><img className={`image-frame ${frameThree}`} src={imagelink} alt="Layout"/></div>
+      }  
+
+    </Parallax.Layer>
+
+     <Parallax.Layer offset={offset} speed={0.4} >
       
       {offset!==0 &&     
       <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
@@ -63,8 +61,8 @@ const Page = ({ offset, caption, first, second, background, imagelink, frameOne,
       <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
       }
 
-      </div>
-    </Parallax.Layer>
+      </Parallax.Layer>
+   
     
   </React.Fragment>
 )
