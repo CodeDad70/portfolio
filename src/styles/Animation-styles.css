@@ -53,7 +53,7 @@ a:hover {
   top: 0px;
   height: 40px;
   display: flex;
-  background-color: rgb(122, 122, 122);
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
   z-index: 1;
 }
 
@@ -77,30 +77,84 @@ a:hover {
   justify-content: center;
 }
 
+
+/* Nav */
+
+.arrow-forward {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  opacity: .5;
+  right: 50px;
+  top: 20px
+}
+
+
+.arrow-forward:hover {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  opacity: 1;
+  right: 50px;
+  top: 20px
+}
+
+.arrow-back {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  opacity: .5;
+  left: 50px;
+  top: 20px 
+}
+
+.arrow-back:hover {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  opacity: 1;
+  left: 50px;
+  top: 20px
+}
+
+.restart {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  opacity: .5;
+  
+}
+
+.restart:hover {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  opacity: 1;
+}
+
+/* text foramtting */
+
 .text {
   pointer-events: none;
   justify-content: start !important;
-  font-family: 'Kanit', sans-serif;
-  line-height: 5px;
-  
-  
+  font-family: 'Kanit', sans-serif;  
 }
 
 .headline {
-  margin-left: 150px;
-  font-size: 40px;
+  margin-left: 1%;
+  font-size: .70em;
   color: rgb(38, 32, 75);
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: .20%;
 }
 
 .copy {
-  margin-left: 150px;
-  font-size: 20px;
+  margin-left: 1%;
+  font-size: .30em;
   color: rgb(62, 59, 83);
-  margin-top: 75px
+  margin-top: .25%;
 }
- 
+
+/* Backgrounds */
+
 .layerBackground {
   position: absolute;
   width: 140%;
@@ -109,17 +163,6 @@ a:hover {
 
 .red {
   background: red
-}
-
-.image-frame {
-  padding-top: 10%;
-  width:70%;
-  height:70%;
-  object-fit:contain
-}
-
-.blue {
- background:blue
 }
 
 .green {
@@ -138,60 +181,52 @@ a:hover {
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
 
-
-.arrow-forward {
-  background-color: black;
-  position: absolute;
-  opacity: .5;
-  right: 50px;
-  top: 20px
-}
-
-
-.arrow-forward:hover {
-  background-color: black;
-  position: absolute;
-  opacity: 1;
-  right: 50px;
-  top: 20px
-}
-
-.arrow-back {
-  background-color: black;
-  position: absolute;
-  opacity: .5;
-  left: 50px;
-  top: 20px
-  
-}
-
-
-.arrow-back:hover {
-  background-color: black;
-  position: absolute;
-  opacity: 1;
-  left: 50px;
-  top: 20px
-}
-
-.restart {
-  background-color: black;
-  position: absolute;
-  right: 50px;
-  top: 20px;
-  opacity: .5;
-  
-}
-
-
-.restart:hover {
-  background-color: black;
-  position: absolute;
-  right: 50px;
-  top: 20px;
-  opacity: 1;
-}
-
 .slide-one {
   background: rgb(255, 255, 255);
+}
+
+.slide-two {
+  background:rgb(207, 236, 255)
+ }
+
+ /* slide images and frames */
+
+ .image-frame {
+  
+  
+}
+
+.frame-one {
+  object-fit:contain;
+  padding-top: 6%;
+  width:80%;
+  height:80%;
+}
+
+.frame-two {
+  object-fit:contain;
+  padding-top: 6%;
+  width:50%;
+  height:50%;
+}
+
+.frame-three {
+  object-fit:contain;
+  padding-top: 6%;
+  width:80%;
+  height:80%;
+}
+
+.frame-four {
+  object-fit:contain;
+  padding-top: 6%;
+  width:80%;
+  height:80%;
+}
+
+.frame-five {
+  object-fit:contain;
+  padding-top: 6%;
+  width:80%;
+  height:80%;
 }
