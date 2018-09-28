@@ -9,6 +9,7 @@ import slideTwoA from '../images/Slide-Two-A.jpg'
 import slideTwoB from '../images/Slide-Two-B.jpg'
 import slideTwoC from '../images/Slide-Two-C.jpg'
 import slideTwoD from '../images/Slide-Two-D.jpg'
+import Inbalance_Excuses from '../images/Inbalance_Excuses.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -29,7 +30,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
     </Parallax.Layer>
    
      <Parallax.Layer offset={offset} speed={0.2}  >     
-      {offset===0 &&        
+      {offset===0  &&        
        <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
       }  
     </Parallax.Layer> 
@@ -51,6 +52,12 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
         <div><img className={`image-frame ${frameFour}`} src={imagelinkC} alt="Layout"/></div>
       }
     </Parallax.Layer>
+
+    <Parallax.Layer offset={offset} speed={0.2}  >     
+      {offset===2  &&        
+       <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+      }  
+    </Parallax.Layer> 
 
      <Parallax.Layer offset={offset} speed={0.4} >
       
@@ -78,11 +85,11 @@ class Designslides extends React.Component {
     return (
       <Parallax className="container" ref="parallax" pages={7} horizontal scrolling={false}>
 
-        <Page offset={0} gradient="pink" background = "slide-one" frameOne = "frame-one" imagelink={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publication"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} gradient="pink" background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} gradient="teal" background = "slide-two" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-four" imagelink={slideTwoA} imagelinkB={slideTwoC} imagelinkC={slideOneA} imagelinkD={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publication"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} gradient="teal" background = "slide-two" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-four" imagelink={slideTwoA} imagelinkB={slideTwoC} imagelinkC={slideTwoD} imagelinkD={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={2} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
+        <Page offset={2} gradient="teal" background = "slide-one" frameOne = "frame-one" imagelink={Inbalance_Excuses} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
 
         <Page offset={3} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
 
