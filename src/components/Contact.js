@@ -3,9 +3,9 @@ import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 
 const Contact = ({ style }) => (
-  <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
+  <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
     <div className="mainRouteItem">
-      <p>Contact</p>
+      <p className="headline">Contact</p>
      
     </div>
     <Route

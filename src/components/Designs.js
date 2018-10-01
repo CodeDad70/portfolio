@@ -5,7 +5,7 @@ import Designslides from './Designslides'
 
 
 const Designs = ({ style }) => (
-  <animated.div className="mainRoute" style={{ ...style, background: `#ef5350` }}>
+  <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
     
     <Designslides/>
      
