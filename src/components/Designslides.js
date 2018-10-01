@@ -13,69 +13,89 @@ import Inbalance_Excuses from '../images/Inbalance_Excuses.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, onClickForward, onClickBack }) => (
   <React.Fragment>
-
+    
     <Parallax.Layer offset={offset} speed={0.2} >
-      <div className={`layerBackground ${background}`} />    
+      
+        <div className={`layerBackground ${background}`} />
+       
+      
     </Parallax.Layer>
 
-    <Parallax.Layer className="text headline" horizontal offset={offset} speed={0.9}>
-        <h3>{caption}</h3>
+    <Parallax.Layer horizontal offset={offset} speed={0.9}>
+      <div className='container'>
+        <h3 className='headline'>{caption}</h3>
+      </div>
     </Parallax.Layer>
 
-     <Parallax.Layer className="text copy " horizontal offset={offset} speed={0.6}>
-      <div>
-        <sm>{first}</sm>
-        <p>{second}</p> 
+     <Parallax.Layer horizontal offset={offset} speed={0.6}>
+
+      <div className='container'>
+        <sm className='copy'>{first}</sm>
+        <p className='copy'>{second}</p> 
       </div>
     </Parallax.Layer>
    
      <Parallax.Layer offset={offset} speed={0.2}  >     
       {offset===0  &&        
-       <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
-      }  
+      
+       <div className='container'> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+      }   
     </Parallax.Layer> 
       
     <Parallax.Layer offset={offset} speed={1.5} >
       {offset===1 &&
-        <div><img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/> </div> 
+        <div className="container">
+          <div><img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/></div> 
+        </div> 
       }
     </Parallax.Layer>
     
-    <Parallax.Layer offset={offset} speed={1} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1} >
       {offset===1 &&
-        <div><img className={`image-frame ${frameThree}`} src={imagelinkB} alt="Layout"/></div>
+        <div className="container">
+          <div><img className={`image-frame ${frameThree}`} src={imagelinkB} alt="Layout"/></div>
+        </div>  
       }
     </Parallax.Layer>
 
-    <Parallax.Layer offset={offset} speed={.5} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
       {offset===1 &&
-        <div><img className={`image-frame ${frameFour}`} src={imagelinkC} alt="Layout"/></div>
+        <div className="container">
+          <div><img className={`image-frame ${frameFour}`} src={imagelinkC} alt="Layout"/></div>
+        </div>
       }
     </Parallax.Layer>
 
     <Parallax.Layer offset={offset} speed={0.2}  >     
-      {offset===2  &&        
-       <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+      {offset===2  &&  
+       <div className="container">      
+        <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+       </div>
       }  
     </Parallax.Layer> 
 
      <Parallax.Layer offset={offset} speed={0.4} >
       
-      {offset!==0 &&     
-      <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
+      {offset!==0 &&  
+           
+          <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
+        
  
       }
       {offset!==6 &&
-      
-      <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
+          
+          <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
+        
       }
       {offset===6 &&
-      <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
+        
+          <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
+    
       }
 
       </Parallax.Layer>
    
-    
+      
   </React.Fragment>
 )
 
@@ -83,7 +103,7 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <Parallax className="container" ref="parallax" pages={7} horizontal scrolling={false}>
+      <Parallax  ref="parallax" pages={7} horizontal scrolling={false}>
 
         <Page offset={0} gradient="pink" background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         

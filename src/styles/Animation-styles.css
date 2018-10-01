@@ -70,89 +70,87 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Parallax */
 
-.container > div > div {
-  display: flex; 
-  
+.container{
+  padding-top:1.5%;
+  margin: 0 auto;
+  width:100%;
 }
 
 
 /* Nav */
 
 .arrow-forward {
+  padding: 1% 1% 0 0;
   float:right;
   opacity: .5;
-  position: absolute;
-  right: 3%; 
-  top: 3%
+  
 }
 
 
 .arrow-forward:hover {
+  padding: 1% 1% 0 0;
   float:right;
-  opacity: 1;
-  position: absolute;
-  right: 3%; 
-  top: 3%  
-  
+  opacity: 1;  
 }
 
 .arrow-back {
-  position: absolute;
+  padding-top:2%;
+  margin-left:2%;
   opacity: .5;
-  float:left;
-  left: 3%;
-  top: 3% 
+  float:left; 
 }
 
 .arrow-back:hover {
-  position: absolute;
+  padding-top:2%;
+  margin-left:2%;
   opacity: 1;
-  float:left;
-  left: 3%;
-  top: 3%
+  float:left; 
 }
 
 .restart {
-  position: absolute;
-  right: 3%; 
-  top: 3%;
+  padding: 1% 1% 0 0;
+  float:right;
   opacity: .5;
   
 }
 
 .restart:hover {
-  position: absolute;
-  right: 3%; 
-  top: 3%;
+  padding: 1% 1% 0 0;
+  float:right;
   opacity: 1;
 }
 
 /* text foramtting */
 
-.text {
-  
-  pointer-events: none;
-  justify-content: start !important;
-  font-family: 'Kanit', sans-serif;  
-}
-
 .headline {
-  float:left;
-  padding-left:1%;
+  float:left; 
+  padding-left:10%;
   font-size: .70em;
   color: rgb(38, 32, 75);
   text-transform: uppercase;
-  margin-top: .20%;
+  padding-top: 1%;
 }
 
 .copy {
   float:left;
-  padding-left:1%;
+  padding-left:10%;
   font-size: .30em;
   color: rgb(62, 59, 83);
-  margin-top: .25%;
+  padding-top: 1%;
 }
 
 /* Backgrounds */
@@ -195,46 +193,39 @@ a:hover {
 
  /* slide images and frames */
 
- .image-frame {
- 
-  
-}
 
 .frame-one {
+  
+  padding-top:8%;
+  padding-left:10%;
   object-fit: contain;
   width:80%;
   height:80%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
+  
 }
 
 .frame-two {
   object-fit:contain; 
   float:left;
   padding-left: 6%;
-  padding-top: 12%; 
-  width:70%;
-  height:70%;
+  width:40%;
+  height:40%;
 }
 
 .frame-three {
-  object-fit:contain;
-  position: absolute;
-  float: right;
-  top: 6%;
-  right: 8%;
+  object-fit:contain; 
+  float:left;  
+  padding-left: 50%;
   width:40%;
   height:40%;
 }
 
 .frame-four {
   object-fit:contain; 
-  position: absolute;
-  
-  right: 8%;
-  top: 44%;
+  float:left;  
+  padding-left: 50%;
+  padding-top: 30%;
   width:40%;
   height:40%;
 }
@@ -248,4 +239,3 @@ a:hover {
   width:35%;
   height:35%;
 }
-
