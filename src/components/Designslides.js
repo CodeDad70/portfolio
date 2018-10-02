@@ -17,6 +17,9 @@ import Softrucks_Living_Room from '../images/Softrucks_Living_Room.jpg'
 import Softrucks_Ollie_Higher from '../images/Softrucks_Ollie_Higher.jpg'
 import Softrucks_Packaging from '../images/Softrucks_Packaging.jpg'
 import Softrucks_Articles from '../images/Softrucks_Articles.jpg'
+import Route_Mens_One from '../images/Route_Mens_One.jpg'
+import Route_Mens_Two from '../images/Route_Mens_Two.jpg'
+import Route_Womens from '../images/Route_Womens.jpg'
 
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
@@ -156,6 +159,32 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }
     </Parallax.Layer>
 
+    {/*slide nine*/}
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+      {offset===8 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameFive}`} src={imagelink} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
+      {offset===8 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameSix}`} src={imagelinkB} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.75} >
+      {offset===8 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameSeven}`} src={imagelinkC} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
 
     {/*copy*/}
 
@@ -183,12 +212,12 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
           <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
 
       }
-      {offset!==7 &&
+      {offset!==9 &&
           
           <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
         
       }
-      {offset===7 &&
+      {offset===9 &&
         
           <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
     
@@ -204,7 +233,7 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <Parallax  ref="parallax" pages={8} horizontal scrolling={false}>
+      <Parallax  ref="parallax" pages={10} horizontal scrolling={false}>
 
         <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
@@ -220,7 +249,9 @@ class Designslides extends React.Component {
 
         <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(7)} onClickBack={() => this.scroll(5)} />
 
-        <Page offset={7} background = "slide-one" frameOne = "frame-eleven" frameTwo="frame-twelve" frameThree="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(6)} />
+        <Page offset={7} background = "slide-one" frameOne = "frame-eleven" frameTwo="frame-twelve" frameThree="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
+
+         <Page offset={8} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
         
       </Parallax>
     )
