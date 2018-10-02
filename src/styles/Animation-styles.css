@@ -261,3 +261,15 @@ a:hover {
   width:26%;
   height:26%;
 }
+
+
+.frame-eight {
+  
+  padding-top:2%;
+  padding-left:10%;
+  object-fit: contain;
+  width:75%;
+  height:75%;
+  
+  
+}

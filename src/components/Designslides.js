@@ -13,7 +13,9 @@ import Inbalance_Excuses from '../images/Inbalance_Excuses.jpg'
 import Yoga_Athletes from '../images/Yoga _Athletes.jpg'
 import Yoga_Swim from '../images/Yoga_Swim.jpg'
 import Inbalance_Cover from '../images/Inbalance_Cover.jpg'
-
+import Tovolo_Coffee from '../images/Tovolo_Coffee.jpg'
+import Tovolo_Latte from '../images/Tovolo_Latte.jpg'
+import Tovolo_Timer from '../images/Tovolo_Timer.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -24,21 +26,6 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
         <div className={`layerBackground ${background}`} />
     </Parallax.Layer>
 
-    {/*copy*/}
-
-    <Parallax.Layer horizontal offset={offset} speed={0.9}>
-      <div className='container'>
-        <h3 className='headline'>{caption}</h3>
-      </div>
-    </Parallax.Layer>
-
-     <Parallax.Layer horizontal offset={offset} speed={0.6}>
-
-      <div className='container'>
-        <sm className='copy'>{first}</sm>
-        <p className='copy'>{second}</p> 
-      </div>
-    </Parallax.Layer>
 
     {/*slide one*/}
    
@@ -111,6 +98,32 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }
     </Parallax.Layer>
 
+    {/*slide five*/}
+
+    <Parallax.Layer offset={offset} speed={0.2}  >     
+      {offset===4  &&  
+       <div className="container">      
+        <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
+       </div>
+      }  
+    </Parallax.Layer> 
+
+    {/*copy*/}
+
+    <Parallax.Layer horizontal offset={offset} speed={0.9}>
+      <div className='container'>
+        <h3 className='headline'>{caption}</h3>
+      </div>
+    </Parallax.Layer>
+
+     <Parallax.Layer horizontal offset={offset} speed={0.6}>
+
+      <div className='container'>
+        <sm className='copy'>{first}</sm>
+        <p className='copy'>{second}</p> 
+      </div>
+    </Parallax.Layer>
+
 
     {/*nav arrows*/}
 
@@ -152,7 +165,7 @@ class Designslides extends React.Component {
 
         <Page offset={3} gradient="teal" background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Yoga_Athletes} imagelinkB={Yoga_Swim} imagelinkC={Inbalance_Cover} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
 
-        <Page offset={4} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
+        <Page offset={4} gradient="teal" background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Coffee} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
 
         <Page offset={5} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(6)} onClickBack={() => this.scroll(4)} />
 
