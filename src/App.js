@@ -8,6 +8,7 @@ import Designs from './components/Designs'
 import Contact from './components/Contact'
 import Welcome from './components/Welcome'
 import './styles/Animation-styles.css'
+import './styles/App.css'
 
 const App = () => (
   <Router>
@@ -15,7 +16,9 @@ const App = () => (
       render={({ location, ...rest }) => (
         <div className="fill">
           <Route exact path="/" render={() => <Redirect to="/welcome" />} />
+          
           <ul className="nav">   
+          <span className='logo-box'><h3 className ='logo'>CodeDad</h3></span>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/designs">Designs</NavLink>
             <NavLink to="/contact">Contact</NavLink>

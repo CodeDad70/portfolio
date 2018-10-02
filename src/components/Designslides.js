@@ -3,10 +3,8 @@ import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
 import { mdiArrowRightThick } from '@mdi/js';
-import timex from '../images/timexwatch.jpg';
 import slideOneA from '../images/Slide-One-A.jpg'
 import slideTwoA from '../images/Slide-Two-A.jpg'
-import slideTwoB from '../images/Slide-Two-B.jpg'
 import slideTwoC from '../images/Slide-Two-C.jpg'
 import slideTwoD from '../images/Slide-Two-D.jpg'
 import Inbalance_Excuses from '../images/Inbalance_Excuses.jpg'
@@ -14,8 +12,8 @@ import Yoga_Athletes from '../images/Yoga _Athletes.jpg'
 import Yoga_Swim from '../images/Yoga_Swim.jpg'
 import Inbalance_Cover from '../images/Inbalance_Cover.jpg'
 import Tovolo_Coffee from '../images/Tovolo_Coffee.jpg'
-import Tovolo_Latte from '../images/Tovolo_Latte.jpg'
 import Tovolo_Timer from '../images/Tovolo_Timer.jpg'
+import Softrucks_Living_Room from '../images/Softrucks_Living_Room.jpg'
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -108,6 +106,27 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }  
     </Parallax.Layer> 
 
+     {/*slide six*/}
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+      {offset===5 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+     {/*slide seven*/}
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+      {offset===6 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+
     {/*copy*/}
 
     <Parallax.Layer horizontal offset={offset} speed={0.9}>
@@ -157,19 +176,19 @@ class Designslides extends React.Component {
     return (
       <Parallax  ref="parallax" pages={7} horizontal scrolling={false}>
 
-        <Page offset={0} gradient="pink" background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} gradient="teal" background = "slide-one" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-four" imagelink={slideTwoA} imagelinkB={slideTwoC} imagelinkC={slideTwoD} imagelinkD={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} background = "slide-one" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-four" imagelink={slideTwoA} imagelinkB={slideTwoC} imagelinkC={slideTwoD} imagelinkD={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={2} gradient="teal" background = "slide-one" frameOne = "frame-one" imagelink={Inbalance_Excuses} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
+        <Page offset={2} background = "slide-one" frameOne = "frame-one" imagelink={Inbalance_Excuses} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
 
-        <Page offset={3} gradient="teal" background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Yoga_Athletes} imagelinkB={Yoga_Swim} imagelinkC={Inbalance_Cover} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
+        <Page offset={3} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Yoga_Athletes} imagelinkB={Yoga_Swim} imagelinkC={Inbalance_Cover} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
 
-        <Page offset={4} gradient="teal" background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Coffee} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
+        <Page offset={4} background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Coffee} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
 
-        <Page offset={5} gradient="teal" background = "blue" frame = "frame-two" imagelink={timex} caption="Client: Timex" first="Catalogue layouts, brochure layouts and packaging graphics"  onClickForward={() => this.scroll(6)} onClickBack={() => this.scroll(4)} />
+        <Page offset={5} background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Timer} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(6)} onClickBack={() => this.scroll(4)} />
 
-        <Page offset={6} gradient="tomato" background = "green" frame = "frame-two" caption="Third Slide" first="Morbi quis" second="est dignissim" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(5)} />
+        <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(5)} />
         
       </Parallax>
     )

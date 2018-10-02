@@ -17,9 +17,18 @@
 }
 
 .logo {
-  font-size: 2.5em;
-  color: rgba(2, 2, 59, 0.678);
-  margin-top: 20px;
+  font-size: 1.65em;
+  color: rgb(255, 233, 111);
+  font-weight:bold;
+  letter-spacing: 10px;
   padding-left:20px;
+  padding-right:20px;
+ 
+}
+
+.logo-box {
+  background: linear-gradient(to left, tomato 0%, gold 100%);
+ 
+ 
 }
 

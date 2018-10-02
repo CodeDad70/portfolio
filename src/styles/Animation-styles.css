@@ -3,6 +3,7 @@
   line-height: 0px;
 }
 
+
 a:hover {
   cursor:pointer;
  }
@@ -90,6 +91,7 @@ a:hover {
   padding-top:1.5%;
   margin: 0 auto;
   width:100%;
+  
 }
 
 
@@ -104,6 +106,7 @@ a:hover {
 
 
 .arrow-forward:hover {
+  
   padding: 1% 1% 0 0;
   float:right;
   opacity: 1;  
@@ -270,6 +273,28 @@ a:hover {
   object-fit: contain;
   width:75%;
   height:75%;
+  
+  
+}
+
+.frame-nine {
+  
+  padding-top:4%;
+  padding-left:10%;
+  object-fit: contain;
+  width:44%;
+  height:44%;
+  
+  
+}
+
+.frame-ten {
+  float:right;
+  padding-top:20%;
+  padding-right:5%;
+  object-fit: contain;
+  height:65%;
+  width:65%;
   
   
 }
