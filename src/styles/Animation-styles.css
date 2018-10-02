@@ -127,17 +127,18 @@ a:hover {
 }
 
 .restart {
-  padding: 1% 1% 0 0;
+  padding: 2% 2% 0 0;
   float:right;
   opacity: .5;
   
 }
 
 .restart:hover {
-  padding: 1% 1% 0 0;
+  padding: 2% 2% 0 0;
   float:right;
   opacity: 1;
 }
+
 
 /* text foramtting */
 
@@ -157,6 +158,14 @@ a:hover {
   color: rgb(62, 59, 83);
   padding-top: 1%;
 }
+
+.final-caption {
+  font-size: .50em;
+  text-align:center;
+  color: rgb(38, 32, 75);
+    
+}
+
 
 /* Backgrounds */
 
@@ -330,83 +339,54 @@ a:hover {
 
 .frame-fourteen {
   float:left;
-  padding-top:5%;
-  padding-left:7%;
+  padding-top:7%;
+
   object-fit: contain;
-  height:45%;
-  width:45%;
+  height:33%;
+  width:33%;
   
 }
 .frame-fifteen {
   float:left;
-  padding-top:5%;
-  padding-left:7%;
+  padding-top:7%;
+  padding-left:33%;
   object-fit: contain;
-  height:45%;
-  width:45%;
+  height:37%;
+  width:37%;
   
 }
 .frame-sixteen {
-  float:left;
-  padding-top:5%;
-  padding-left:7%;
+  float:right;
+ 
+  padding-top:7%;
   object-fit: contain;
-  height:45%;
-  width:45%;
+  height:33%;
+  width:33%;
   
 }
 .frame-seventeen {
   float:left;
-  padding-top:5%;
-  padding-left:7%;
+  padding-top:39%;
+  padding-left:33%;
   object-fit: contain;
-  height:45%;
-  width:45%;
+  height:39%;
+  width:39%;
   
 }
 .frame-eighteen {
   float:left;
-  padding-top:5%;
-  padding-left:7%;
+  padding-top:39%;
   object-fit: contain;
-  height:45%;
-  width:45%;
+  height:33%;
+  width:33%;
   
 }
 .frame-nineteen {
-  float:left;
-  padding-top:5%;
-  padding-left:7%;
+  float:right;
+  padding-top:39%;
   object-fit: contain;
-  height:45%;
-  width:45%;
-  
-}
-.frame-twenty {
-  float:left;
-  padding-top:5%;
-  padding-left:7%;
-  object-fit: contain;
-  height:45%;
-  width:45%;
-  
-}
-.frame-twentyone {
-  float:left;
-  padding-top:5%;
-  padding-left:7%;
-  object-fit: contain;
-  height:45%;
-  width:45%;
-  
-}
-.frame-twentytwo {
-  float:left;
-  padding-top:5%;
-  padding-left:7%;
-  object-fit: contain;
-  height:45%;
-  width:45%;
+  height:33%;
+  width:33%;
   
 }
 
