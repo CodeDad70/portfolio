@@ -20,9 +20,18 @@ import Softrucks_Articles from '../images/Softrucks_Articles.jpg'
 import Route_Mens_One from '../images/Route_Mens_One.jpg'
 import Route_Mens_Two from '../images/Route_Mens_Two.jpg'
 import Route_Womens from '../images/Route_Womens.jpg'
+import Books from '../images/icons/Books.jpg'
+import Brylane from '../images/icons/Brylane.jpg'
+import Donuts from '../images/icons/Donuts.jpg'
+import Feet from '../images/icons/Feet.jpg'
+import Med from '../images/icons/Med.jpg'
+import Perfume from '../images/icons/Perfume.jpg'
+import Sui_Blue from '../images/icons/Sui_Blue.jpg'
+import Sui_Purple from '../images/icons/Sui_Purple.jpg'
+import Timex from '../images/icons/Timex.jpg'
 
 
-const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
+const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, imagelinkE, imagelinkF, imagelinkG, imagelinkH, imagelinkJ, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, frameEight, frameNine, onClickForward, onClickBack }) => (
   <React.Fragment>
     
     {/*background*/}
@@ -252,7 +261,9 @@ class Designslides extends React.Component {
         <Page offset={7} background = "slide-one" frameOne = "frame-eleven" frameTwo="frame-twelve" frameThree="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
 
          <Page offset={8} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
-        
+
+         <Page offset={9} background = "slide-one" frameOne="frame-fourteen" frameTwo = "frame-fifteen" frameThree = "frame-sixteen" frameFour = "frame-seventeen" frameFive = "frame-eighteen" frameSix = "frame-nineteen" frameSeven = "frame-twenty" frameEight = "frame-twentyone" frameNine = "frame-twentytwo" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Brylane} imagelinkF={Sui)Blue} imagelinkG={Perfume} imagelinkH={Sui_Purple} imagelinkJ={Med} onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)} /> 
+
       </Parallax>
     )
   }
