@@ -296,5 +296,34 @@ a:hover {
   height:65%;
   width:65%;
   
+}
+
+.frame-eleven {
+  float:right;
+  padding-top:8%;
+  padding-right:10%;
+  object-fit: contain;
+  height:38%;
+  width:38%;
+  
+}
+
+.frame-twelve {
+  float:left;
+  padding-top:36%;
+  padding-left:12%;
+  object-fit: contain;
+  height:37%;
+  width:37%;
+  
+}
+
+.frame-thirteen {
+  float:left;
+  padding-top:5%;
+  padding-left:7%;
+  object-fit: contain;
+  height:45%;
+  width:45%;
   
 }

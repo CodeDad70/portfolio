@@ -14,6 +14,10 @@ import Inbalance_Cover from '../images/Inbalance_Cover.jpg'
 import Tovolo_Coffee from '../images/Tovolo_Coffee.jpg'
 import Tovolo_Timer from '../images/Tovolo_Timer.jpg'
 import Softrucks_Living_Room from '../images/Softrucks_Living_Room.jpg'
+import Softrucks_Ollie_Higher from '../images/Softrucks_Ollie_Higher.jpg'
+import Softrucks_Packaging from '../images/Softrucks_Packaging.jpg'
+import Softrucks_Articles from '../images/Softrucks_Articles.jpg'
+
 
 const Page = ({ offset, caption, first, second, background, imagelink, imagelinkB, imagelinkC, imagelinkD, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
   <React.Fragment>
@@ -36,7 +40,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
 
     {/*slide two*/}
       
-    <Parallax.Layer offset={offset} speed={1.5} >
+    <Parallax.Layer offset={offset} speed={.5} >
       {offset===1 &&
         <div className="container">
           <div><img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/></div> 
@@ -44,7 +48,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }
     </Parallax.Layer>
     
-    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
       {offset===1 &&
         <div className="container">
           <div><img className={`image-frame ${frameThree}`} src={imagelinkB} alt="Layout"/></div>
@@ -52,7 +56,7 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }
     </Parallax.Layer>
 
-    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={2.45} >
       {offset===1 &&
         <div className="container">
           <div><img className={`image-frame ${frameFour}`} src={imagelinkC} alt="Layout"/></div>
@@ -126,6 +130,32 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
       }
     </Parallax.Layer>
 
+     {/*slide eight*/}
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
+      {offset===7 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.75} >
+      {offset===7 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameTwo}`} src={imagelinkB} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+      {offset===7 &&
+        <div className="container">
+          <div><img className={`image-frame ${frameThree}`} src={imagelinkC} alt="Layout"/></div>
+        </div>  
+      }
+    </Parallax.Layer>
+
 
     {/*copy*/}
 
@@ -153,12 +183,12 @@ const Page = ({ offset, caption, first, second, background, imagelink, imagelink
           <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
 
       }
-      {offset!==6 &&
+      {offset!==7 &&
           
           <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
         
       }
-      {offset===6 &&
+      {offset===7 &&
         
           <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
     
@@ -174,7 +204,7 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <Parallax  ref="parallax" pages={7} horizontal scrolling={false}>
+      <Parallax  ref="parallax" pages={8} horizontal scrolling={false}>
 
         <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
@@ -188,7 +218,9 @@ class Designslides extends React.Component {
 
         <Page offset={5} background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Timer} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(6)} onClickBack={() => this.scroll(4)} />
 
-        <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(5)} />
+        <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(7)} onClickBack={() => this.scroll(5)} />
+
+        <Page offset={7} background = "slide-one" frameOne = "frame-eleven" frameTwo="frame-twelve" frameThree="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(6)} />
         
       </Parallax>
     )
