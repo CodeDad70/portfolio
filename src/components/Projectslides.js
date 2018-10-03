@@ -3,9 +3,9 @@ import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
 import { mdiArrowRightThick } from '@mdi/js';
-import {filmFinder} from '../images/code-images/filmFinder.jpg'
-import {portfolio} from '../images/code-images/portfolio.jpg'
-import {sproutHq} from '../images/code-images/sproutHq.jpg'
+import filmFinder from '../images/code_images/filmFinder.jpg'
+import portfolio from '../images/code_images/portfolio.jpg'
+import sproutHq from '../images/code_images/sproutHq.jpg'
 
 
 

@@ -8,6 +8,7 @@ import Designs from './components/Designs'
 import Contact from './components/Contact'
 import Welcome from './components/Welcome'
 import './styles/Animation-styles.css'
+import './styles/Project-styles.css'
 import './styles/App.css'
 
 const App = () => (
