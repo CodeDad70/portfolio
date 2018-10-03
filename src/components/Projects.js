@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import Projectslides from './Projectslides'
 
 const Projects = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
-    <div className="mainRouteItem">
-      <p className='headline'>Projects</p>
+    
+    <Projectslides/>
      
-    </div>
+    
     <Route
       render={({ location }) => (
         <div>

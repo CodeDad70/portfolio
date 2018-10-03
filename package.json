@@ -23,6 +23,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@mdi/react": "^1.0.1"
+    "@mdi/react": "^1.0.1",
+    "ws": "3.3.2"
   }
 }

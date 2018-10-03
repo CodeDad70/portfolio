@@ -7,6 +7,13 @@ body {
   
 }
 
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 70%
+	}
+}
+
+
 a:hover {
   cursor:pointer;
  }
