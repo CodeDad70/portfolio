@@ -38,12 +38,10 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
         <div className={`layerBackground ${background}`} />
     </Parallax.Layer>
 
-
     {/*slide one*/}
    
-     <Parallax.Layer offset={offset} speed={0.2}  >     
-      {offset===0  &&        
-      
+    <Parallax.Layer offset={offset} speed={0.2}  >     
+      {offset===0  &&             
        <div className='container'> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
       }   
     </Parallax.Layer> 
@@ -114,9 +112,9 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
 
     <Parallax.Layer offset={offset} speed={0.2}  >     
       {offset===4  &&  
-       <div className="container">      
-        <div> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
-       </div>
+        <div className="container">      
+          <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>
+        </div>
       }  
     </Parallax.Layer> 
 
@@ -253,7 +251,6 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     </Parallax.Layer>
 
     <Parallax.Layer horizontal offset={offset} speed={0.6}>
-
       <div className='container'>
         <sm className='copy'>{first}</sm>
         <p className='copy'>{second}</p> 
@@ -263,39 +260,26 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer horizontal offset={offset} speed={0.9}>
       <div className='final-caption'>
         <h3 >{finalCaption}</h3>
-        <p>{finalCopy}</p>
-        
+        <p>{finalCopy}</p>       
       </div>
     </Parallax.Layer>
 
-
     {/*nav arrows*/}
 
-     <Parallax.Layer offset={offset} speed={0.4} >
-      
+    <Parallax.Layer offset={offset} speed={0.4} >   
       {offset!==0  &&  
-           
-          <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
-
+        <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
       }
 
-      
-
-      {offset!==9 &&
-          
-          <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
-        
+      {offset!==9 &&         
+        <Icon path={mdiArrowRightThick}  className = "arrow-forward" size={1.5} color='black' onClick={onClickForward}/>
       }
+
       {offset===9 &&
-        <div>
-
-          <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
-          
-        </div>  
+        <Icon path={mdiRestart} size={1.5} className = "restart" flip-h color='black' onClick={onClickForward}/>
       }
-      </Parallax.Layer>
-   
-      
+    </Parallax.Layer>
+  
   </React.Fragment>
 )
 
@@ -323,14 +307,11 @@ class Designslides extends React.Component {
 
          <Page offset={8} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
 
-         <Page offset={9} background = "slide-one" frameOne="frame-fourteen" frameTwo = "frame-fifteen" frameThree = "frame-sixteen" frameFour = "frame-seventeen" frameFive = "frame-eighteen" frameSix = "frame-nineteen" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Perfume} imagelinkF={Sui_Blue} finalCaption="Clients Include  " finalCopy="Timex, Williams-Sonoma, Marvel, Etc. Etc." onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)} /> 
+         <Page offset={9} background = "slide-one" frameOne="frame-fourteen" frameTwo = "frame-fifteen" frameThree = "frame-sixteen" frameFour = "frame-seventeen" frameFive = "frame-eighteen" frameSix = "frame-nineteen" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Perfume} imagelinkF={Sui_Blue} finalCaption="Previous Clients Include: " finalCopy="Williams-Sonoma, Timex, Tovolo, Route 66, Softrucks, Yoga Journal, and OSP Group" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)}/>
 
       </Parallax>
     )
   }
 }
-
-
-
 
 export default Designslides;

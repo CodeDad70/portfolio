@@ -3,7 +3,6 @@
   line-height: 0px;
 }
 
-
 a:hover {
   cursor:pointer;
  }
@@ -43,7 +42,7 @@ a:hover {
 
 .content {
   flex: 1;
-  font-size: 50px;
+  
   color: white;
   height: 100%;
 }
@@ -70,14 +69,6 @@ a:hover {
 .navItemUltra {
   margin-top: 64px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -127,14 +118,14 @@ a:hover {
 }
 
 .restart {
-  padding: 2% 2% 0 0;
+  padding: 1% 2% 0 0;
   float:right;
   opacity: .5;
   
 }
 
 .restart:hover {
-  padding: 2% 2% 0 0;
+  padding: 1% 2% 0 0;
   float:right;
   opacity: 1;
 }
@@ -145,7 +136,7 @@ a:hover {
 .headline {
   float:left; 
   padding-left:10%;
-  font-size: .70em;
+  font-size: 2em;
   color: rgb(38, 32, 75);
   text-transform: uppercase;
   padding-top: 1%;
@@ -154,16 +145,20 @@ a:hover {
 .copy {
   float:left;
   padding-left:10%;
-  font-size: .30em;
+  font-size: 1em;
   color: rgb(62, 59, 83);
   padding-top: 1%;
 }
 
 .final-caption {
-  font-size: .50em;
+  font-size: 2em;
   text-align:center;
   color: rgb(38, 32, 75);
     
+}
+
+p {
+  font-size:.65em;
 }
 
 
