@@ -3,9 +3,9 @@ import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
 import { mdiArrowRightThick } from '@mdi/js';
-import filmFinder from '../images/code_images/filmFinder.jpg'
-import portfolio from '../images/code_images/portfolio.jpg'
-import sproutHq from '../images/code_images/sproutHq.jpg'
+import filmFinder from '../images/code_images/filmFinder.png'
+import portfolio from '../images/code_images/portfolio.png'
+import sproutHq from '../images/code_images/sproutHq.png'
 
 
 
@@ -24,9 +24,8 @@ const Page = ({ offset, caption, first, second, background, frame, imagelink, on
     <Parallax.Layer offset={offset} speed={0.2}  >     
       {offset===0  &&             
         <div className='container'> 
-          <h1>Test</h1>
-          <img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/>  
-          <h1>Test</h1>
+          <img className={`p-image-frame ${frame}`} src={imagelink} alt="Layout"/>  
+          
         </div>
       }   
     </Parallax.Layer> 
@@ -36,7 +35,7 @@ const Page = ({ offset, caption, first, second, background, frame, imagelink, on
     <Parallax.Layer offset={offset} speed={.5} >
       {offset===1 &&
         <div className="container">
-          <div><img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/></div> 
+          <div><img className={`p-image-frame ${frame}`} src={imagelink} alt="Layout"/></div> 
         </div> 
       }
     </Parallax.Layer>
@@ -46,7 +45,7 @@ const Page = ({ offset, caption, first, second, background, frame, imagelink, on
     <Parallax.Layer offset={offset} speed={0.2}  >     
       {offset===2  &&  
        <div className="container">      
-        <div> <img className={`image-frame ${frame}`} src={imagelink} alt="Layout"/>  </div>
+        <div> <img className={`p-image-frame ${frame}`} src={imagelink} alt="Layout"/>  </div>
        </div>
       }  
     </Parallax.Layer> 
@@ -93,11 +92,11 @@ class Projectslides extends React.Component {
     return (
       <Parallax  ref="parallax" pages={3} horizontal scrolling={false}>
 
-        <Page offset={0} background = "red" frame = "frame-one" imagelink={""} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} background = "pink" frame = "p-frame-one" imagelink={sproutHq} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={1} background = "blue" frame = "frame-one" imagelink={""} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+        <Page offset={1} background = "teal" frame = "p-frame-one" imagelink={filmFinder} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
-        <Page offset={2} background = "green" frame = "frame-one" imagelink={""} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
+        <Page offset={2} background = "green" frame = "p-frame-one" imagelink={portfolio} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
 
       </Parallax>
     )

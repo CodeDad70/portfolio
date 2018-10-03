@@ -177,13 +177,6 @@ p {
   height: 100%;
 } 
 
-.red {
-  background: rgb(255, 255, 255)
-}
-
-.green {
-  background: green
-}
 
 /* .pink {
   background: linear-gradient(to right, deeppink 0%, coral 100%);

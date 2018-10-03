@@ -1,0 +1,35 @@
+ /* Backgrounds */
+
+.layerBackground {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+} 
+ 
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+} 
+
+.green {
+  background: linear-gradient(to right, rgb(55, 168, 35) 0%, rgb(245, 253, 226) 100%);
+}
+
+/* frames */
+
+.p-frame-one {
+    
+  padding-top:7%;
+  padding-left:12%;
+  object-fit: contain;
+  width:75%;
+  height:75%;
+
+}
