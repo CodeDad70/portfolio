@@ -73,7 +73,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer offset={offset} speed={0.2}  >     
       {frameFive  &&  
        <div className="container">      
-        <div> <img className={`image-frame ${frameFive}`} src={imagelink} alt="Layout"/>  </div>
+        <div> <img className={`image-frame ${frameFive}`} src={imagelinkD} alt="Layout"/>  </div>
        </div>
       }  
     </Parallax.Layer> 
@@ -81,7 +81,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
       {frameSix &&
         <div className="container">
-          <div><img className={`image-frame ${frameSix}`} src={imagelinkB} alt="Layout"/></div>
+          <div><img className={`image-frame ${frameSix}`} src={imagelinkE} alt="Layout"/></div>
         </div>  
       }
     </Parallax.Layer>
@@ -89,7 +89,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
       {frameSeven &&
         <div className="container">
-          <div><img className={`image-frame ${frameSeven}`} src={imagelinkC} alt="Layout"/></div>
+          <div><img className={`image-frame ${frameSeven}`} src={imagelinkF} alt="Layout"/></div>
         </div>  
       }
     </Parallax.Layer>
@@ -148,7 +148,7 @@ class Designslides extends React.Component {
         
         <Page offset={2} background = "slide-one" frameOne = "frame-one" imagelink={Inbalance_Excuses} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(3)} onClickBack={() => this.scroll(1)} />
 
-        <Page offset={3} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Yoga_Athletes} imagelinkB={Yoga_Swim} imagelinkC={Inbalance_Cover} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
+        <Page offset={3} background = "slide-one" frameTwo = "frame-five" frameThree = "frame-six" frameFour = "frame-seven" imagelink={Yoga_Athletes} imagelinkB={Yoga_Swim} imagelinkC={Inbalance_Cover} caption="Client: Yoga Journal" first="Art direction and design of digital magazines"  onClickForward={() => this.scroll(4)} onClickBack={() => this.scroll(2)} />
 
         <Page offset={4} background = "slide-one" frameOne = "frame-eight" imagelink={Tovolo_Coffee} caption="Client: Tovolo" first="Art direction, brand id, package design, trade show graphics, catalogue design"  onClickForward={() => this.scroll(5)} onClickBack={() => this.scroll(3)} />
 
@@ -156,11 +156,11 @@ class Designslides extends React.Component {
 
         <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(7)} onClickBack={() => this.scroll(5)} />
 
-        <Page offset={7} background = "slide-one" frameFive = "frame-eleven" frameSix="frame-twelve" frameSeven="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
+        <Page offset={7} background = "slide-one" frameTwo = "frame-eleven" frameThree="frame-twelve" frameFour="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
 
-         <Page offset={8} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
+         <Page offset={8} background = "slide-one" frameTwo = "frame-five" frameThree = "frame-six" frameFour = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
 
-         <Page offset={9} background = "slide-one" frameOne="frame-fourteen" frameTwo = "frame-fifteen" frameThree = "frame-sixteen" frameFour = "frame-seventeen" frameFive = "frame-eighteen" frameSix = "frame-nineteen" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Perfume} imagelinkF={Sui_Blue} finalCaption="Previous Clients Include: " finalCopy="Williams-Sonoma, Timex, Tovolo, Route 66, Softrucks, Yoga Journal, and OSP Group" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)}/>
+         <Page offset={9} background = "slide-one" frameTwo="frame-fourteen" frameThree = "frame-fifteen" frameFour = "frame-sixteen" frameFive = "frame-seventeen" frameSix = "frame-eighteen" frameSeven = "frame-nineteen" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Perfume} imagelinkF={Sui_Blue} finalCaption="Previous Clients Include: " finalCopy="Williams-Sonoma, Timex, Tovolo, Route 66, Softrucks, Yoga Journal, and OSP Group" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)}/>
 
       </Parallax>
     )
