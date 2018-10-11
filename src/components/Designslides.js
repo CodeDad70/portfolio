@@ -81,7 +81,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
       {frameSix &&
         <div className="container">
-          <div><img className={`image-frame ${frameSix}`} src={imagelink} alt="Layout"/></div>
+          <div><img className={`image-frame ${frameSix}`} src={imagelinkB} alt="Layout"/></div>
         </div>  
       }
     </Parallax.Layer>
@@ -89,7 +89,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
     <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
       {frameSeven &&
         <div className="container">
-          <div><img className={`image-frame ${frameSeven}`} src={imagelinkB} alt="Layout"/></div>
+          <div><img className={`image-frame ${frameSeven}`} src={imagelinkC} alt="Layout"/></div>
         </div>  
       }
     </Parallax.Layer>
@@ -156,7 +156,7 @@ class Designslides extends React.Component {
 
         <Page offset={6} background = "slide-one" frameOne = "frame-one" imagelink={Softrucks_Living_Room} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(7)} onClickBack={() => this.scroll(5)} />
 
-        <Page offset={7} background = "slide-one" frameOne = "frame-eleven" frameTwo="frame-twelve" frameThree="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
+        <Page offset={7} background = "slide-one" frameFive = "frame-eleven" frameSix="frame-twelve" frameSeven="frame-thirteen" imagelink={Softrucks_Articles}  imagelinkB={Softrucks_Ollie_Higher}  imagelinkC={Softrucks_Packaging} caption="Client:Softrucks" first="Art direction, logo design, brand id, package design, website design, photography, deck graphics" onClickForward={() => this.scroll(8)} onClickBack={() => this.scroll(6)} />
 
          <Page offset={8} background = "slide-one" frameFive = "frame-five" frameSix = "frame-six" frameSeven = "frame-seven" imagelink={Route_Womens} imagelinkB={Route_Mens_One} imagelinkC={Route_Mens_Two} caption="Client: Route 66" first="Design of pocket tags, size stickers and hang tags for jeans"  onClickForward={() => this.scroll(9)} onClickBack={() => this.scroll(7)} />
 
