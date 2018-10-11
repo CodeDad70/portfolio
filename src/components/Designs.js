@@ -8,10 +8,6 @@ const Designs = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
     
     <Designslides/>
-     
-      
-      
-     
     
     <Route
       render={({ location }) => (
@@ -31,8 +27,5 @@ const Designs = ({ style }) => (
   </animated.div>
 
 )
-
-
-
 
 export default Designs;

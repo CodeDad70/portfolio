@@ -7,8 +7,7 @@ const Projects = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
     
     <Projectslides/>
-     
-    
+  
     <Route
       render={({ location }) => (
         <div>
@@ -26,8 +25,6 @@ const Projects = ({ style }) => (
     />
   </animated.div>
 )
-
-
 
 
 export default Projects;

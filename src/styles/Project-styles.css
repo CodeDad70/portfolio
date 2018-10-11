@@ -1,8 +1,16 @@
- /* Backgrounds */
+.p-container{
+  padding-top:1.5%;
+  margin: 0 auto;
+  width:100%;
+  
+}
+
+
+/* Backgrounds */
 
 .layerBackground {
   position: absolute;
-  width: 140%;
+  width: 150%;
   height: 100%;
 } 
  
@@ -26,10 +34,46 @@
 
 .p-frame-one {
     
-  padding-top:7%;
-  padding-left:12%;
+   
+  padding-top:5%;
+  padding-left:25%;
   object-fit: contain;
-  width:75%;
-  height:75%;
+  width:50%;
+  height:50%;
 
+}
+
+.p-frame-two {
+    
+  padding-top:5%;
+  padding-left:14%;
+  object-fit: contain;
+  width:25%;
+  height:25%;
+
+}
+
+/*copy*/
+
+
+.p-headline {
+  float:left; 
+  padding-left:25%;
+  font-size: 2em;
+  color: rgb(38, 32, 75);
+  text-transform: uppercase;
+  padding-top: 1%;
+}
+
+.p-copy {
+  float:left;
+  padding-left:25%;
+  font-size: 1em;
+  color: rgb(62, 59, 83);
+  padding-top: 1%;
+}
+
+.form {
+  padding-left: 20px;
+  padding-top: 20px
 }
