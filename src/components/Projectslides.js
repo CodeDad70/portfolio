@@ -35,20 +35,15 @@ const Page = ({ offset, caption, first, second, specs_link, specs_one, specs_two
       </Parallax.Layer>
 
       <Parallax.Layer horizontal offset={offset} speed={2}>
-        <div className='p-container'>
+        
           <sm className='p-copy'>{first}</sm>
-          <p className='p-copy'>{second}</p> 
-        </div>
+        
       </Parallax.Layer>
 
-        <Parallax.Layer horizontal offset={offset} speed={2}>
-        
-        
-          <p className='specs'>{specs_one}</p><br/>
-          <p className='specs'>{specs_two}</p><br/>
-          <p className='specs'>{specs_three}</p><br/>
-        
-      
+        <Parallax.Layer horizontal offset={offset} speed={2}>        
+          <p className='specs'>{specs_one}</p>
+          <p className='specs'>{specs_two}</p>
+          <p className='specs'>{specs_three}</p>
       </Parallax.Layer>
 
 
@@ -86,10 +81,10 @@ class Projectslides extends React.Component {
       <Parallax  ref="parallax" pages={3} horizontal scrolling={false}>
         
         {/*slide one*/}
-          <Page offset={0} background = "slide-one" frame = "p-frame-one" imagelink={sproutHq} caption="Project: SproutHQ" first="This app uses Rails in the backend with Javascript and Jquery in the front." specs="Test copy goes here" onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+          <Page offset={0} background = "slide-one" frame = "p-frame-one" imagelink={sproutHq} caption="Project: SproutHQ" first="Create picture cards to track your childs vital stats and milestones." specs="Test copy goes here" onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         {/*slide two*/}
-          <Page offset={1} background = "slide-one" frame = "p-frame-one" imagelink={filmFinder} caption="Project: FilmFinder" first="Utilized React with Redux and Thunk for centralized storage of state and asynchronous requests to The Movie DB API and the Rails API" specs_link= "https://github.com/CodeDad70/portfolio/commits/master" specs_one= "• Utilizes Rails to generate an API in the back end for database persistence " specs_two = "• Utilizes React with Redux and Thunk for centralized storage of state and asynchronous requests to both The Movie Database API and the Rails API." specs_three= "• Utilizes react-routes to create a restful route structure but still employs the speed of the virtual DOM, single page app, and client side rendering"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+          <Page offset={1} background = "slide-one" frame = "p-frame-one" imagelink={filmFinder} caption="Project: FilmFinder" first="Search for your favorite movies or actors and create a watch list." specs_link= "https://github.com/CodeDad70/portfolio/commits/master" specs_one= "• Utilizes Rails to generate an API in the back end for database persistence " specs_two = "• Utilizes React with Redux and Thunk for centralized storage of state and asynchronous requests to both The Movie Database API and the Rails API." specs_three= "• Utilizes react-routes to create a restful route structure but still employs the speed of the virtual DOM, single page app, and client side rendering" specs_four="Utilized React with Redux and Thunk for centralized storage of state and asynchronous requests to The Movie DB API and the Rails API"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
         {/*slide three*/}
           <Page offset={2} background = "slide-one" frame = "p-frame-one" imagelink={portfolio} caption="Project: ES Design" first="This app is built with React and utilizes React-spring for transistion animations"  specs="Test copy goes here" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
