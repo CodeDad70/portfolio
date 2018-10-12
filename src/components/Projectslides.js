@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Parallax } from 'react-spring'
 import Icon from '@mdi/react';
 import { mdiRestart } from '@mdi/js';
@@ -8,7 +7,8 @@ import filmFinder from '../images/code_images/filmFinder.png'
 import portfolio from '../images/code_images/portfolio.png'
 import sproutHq from '../images/code_images/sproutHq.png'
 
-const Page = ({ offset, caption, first, second, specs_link, specs_one, specs_two, specs_three, specs_four,  background, frame, imagelink, onClickForward, onClickBack }) => (
+
+const Page = ({ offset, caption, first, second, specs_link, test_url, specs_one, specs_two, specs_three, specs_four,  background, frame, imagelink, onClickForward, onClickBack }) => (
   
   <React.Fragment>
     
@@ -68,8 +68,8 @@ const Page = ({ offset, caption, first, second, specs_link, specs_one, specs_two
         }
 
         
-         <div className="specs-link"> <Link to="${specs_link}" target="blank">Visit this site</Link></div>
-        
+         <div className="specs-link"> <a href={specs_link} target="_blank">Visit this site</a></div>
+         
 
        </Parallax.Layer>
 
@@ -81,6 +81,7 @@ const Page = ({ offset, caption, first, second, specs_link, specs_one, specs_two
 class Projectslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
+    
     return (
 
       <Parallax  ref="parallax" pages={3} horizontal scrolling={false}>
@@ -89,7 +90,7 @@ class Projectslides extends React.Component {
           <Page offset={0} background = "slide-one" frame = "p-frame-one" imagelink={sproutHq} caption="Project: SproutHQ" first="Create picture cards to track your childs vital stats and milestones." specs="Test copy goes here" onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         {/*slide two*/}
-          <Page offset={1} background = "slide-one" frame = "p-frame-one" imagelink={filmFinder} caption="Project: FilmFinder" first="Search for your favorite movies or actors and create a watch list." specs_link= "https://github.com/CodeDad70/portfolio/commits/master" specs_one= "• Utilizes Rails to generate an API in the back end for database persistence " specs_two = "• Utilizes React with Redux and Thunk for centralized storage of state and asynchronous requests to both The Movie Database API and the Rails API." specs_three= "• Utilizes react-routes to create a restful route structure but still employs the speed of the virtual DOM, single page app, and client side rendering" specs_four="• Utilized React with Redux and Thunk for centralized storage of state and asynchronous requests to The Movie DB API and the Rails API"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
+          <Page offset={1} background = "slide-one" frame = "p-frame-one" imagelink={filmFinder} caption="Project: FilmFinder" first="Search for your favorite movies or actors and create a watch list." specs_link="https://github.com/CodeDad70/portfolio/commits/master" specs_one= "• Utilizes Rails to generate an API in the back end for database persistence " specs_two = "• Utilizes React with Redux and Thunk for centralized storage of state and asynchronous requests to both The Movie Database API and the Rails API." specs_three= "• Utilizes react-routes to create a restful route structure but still employs the speed of the virtual DOM, single page app, and client side rendering" specs_four="• Utilized React with Redux and Thunk for centralized storage of state and asynchronous requests to The Movie DB API and the Rails API"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
         {/*slide three*/}
           <Page offset={2} background = "slide-one" frame = "p-frame-one" imagelink={portfolio} caption="Project: ES Design" first="This app is built with React and utilizes React-spring for transistion animations"  specs="Test copy goes here" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(1)} />
