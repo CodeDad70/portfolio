@@ -40,13 +40,13 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
 
     {/*frames*/}
    
-    <Parallax.Layer offset={offset} speed={0.2}  >     
+    <Parallax.Layer offset={offset} speed={0.5}  >     
       {frameOne  &&             
        <div className='container'> <img className={`image-frame ${frameOne}`} src={imagelink} alt="Layout"/>  </div>
       }   
     </Parallax.Layer> 
       
-    <Parallax.Layer offset={offset} speed={.5} >
+    <Parallax.Layer offset={offset} speed={.75} >
       {frameTwo &&
         <div className="container">
           <div><img className={`image-frame ${frameTwo}`} src={imagelink} alt="Layout"/></div> 
@@ -70,7 +70,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
       }
     </Parallax.Layer>
 
-    <Parallax.Layer offset={offset} speed={0.2}  >     
+    <Parallax.Layer offset={offset} speed={3.1}  >     
       {frameFive  &&  
        <div className="container">      
         <div> <img className={`image-frame ${frameFive}`} src={imagelinkD} alt="Layout"/>  </div>
@@ -78,7 +78,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
       }  
     </Parallax.Layer> 
 
-    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={.5} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.1} >
       {frameSix &&
         <div className="container">
           <div><img className={`image-frame ${frameSix}`} src={imagelinkE} alt="Layout"/></div>
@@ -86,7 +86,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
       }
     </Parallax.Layer>
 
-    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.25} >
+    <Parallax.Layer  className = 'slide-wrapper' offset={offset} speed={1.75} >
       {frameSeven &&
         <div className="container">
           <div><img className={`image-frame ${frameSeven}`} src={imagelinkF} alt="Layout"/></div>
