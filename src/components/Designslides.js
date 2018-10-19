@@ -27,6 +27,7 @@ import Feet from '../images/icons/Feet.jpg'
 import Perfume from '../images/icons/Perfume.jpg'
 import Sui_Blue from '../images/icons/Sui_Blue.jpg'
 import Timex from '../images/icons/Timex.jpg'
+import Nav from './Nav'
 
 
 const Page = ({ offset, caption, first, second, finalCaption, finalCopy, background, imagelink, imagelinkB, imagelinkC, imagelinkD, imagelinkE, imagelinkF, frameOne, frameTwo, frameThree, frameFour, frameFive, frameSix, frameSeven, onClickForward, onClickBack }) => (
@@ -140,6 +141,8 @@ class Designslides extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
+      <div className="content">
+        
       <Parallax  ref="parallax" pages={10} horizontal scrolling={false}>
 
         <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
@@ -163,6 +166,7 @@ class Designslides extends React.Component {
          <Page offset={9} background = "slide-one" frameTwo="frame-fourteen" frameThree = "frame-fifteen" frameFour = "frame-sixteen" frameFive = "frame-seventeen" frameSix = "frame-eighteen" frameSeven = "frame-nineteen" imagelink={Books} imagelinkB={Donuts} imagelinkC={Timex} imagelinkD={Feet} imagelinkE={Perfume} imagelinkF={Sui_Blue} finalCaption="Previous Clients Include: " finalCopy="Williams-Sonoma, Timex, Tovolo, Route 66, Softrucks, Yoga Journal, and OSP Group" onClickForward={() => this.scroll(0)} onClickBack={() => this.scroll(8)}/>
 
       </Parallax>
+      </div>
     )
   }
 }
