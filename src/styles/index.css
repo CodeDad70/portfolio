@@ -9,6 +9,7 @@ body {
 
 @media only screen and (max-width: 750px) {
 	body {
+    background:blue;
 		font-size: 70%
 	}
 }
