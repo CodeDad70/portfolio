@@ -145,7 +145,7 @@ a:hover {
   .copy {
     line-height:15px;
     text-align:center;
-    font-size: .70em;
+    font-size: .75em;
     color: rgb(62, 59, 83);
     padding-top: 12%;
   }
@@ -227,6 +227,7 @@ a:hover {
     height:95%;
   }
 
+  /*this frame is invisible in mobile */
   .frame-two {
     object-fit:contain; 
     float:left;
@@ -240,7 +241,7 @@ a:hover {
     object-fit:contain; 
     float:left;  
     padding-left:1.5%;
-    padding-top: 20%;
+    padding-top: 25%;
     width:95%;
     height:95%;
   }
@@ -249,7 +250,7 @@ a:hover {
     object-fit:contain; 
     float:left;  
     padding-left: 1.5%;
-    padding-top: 90%;
+    padding-top: 95%;
     width:95%;
     height:95%;
   }
@@ -257,111 +258,92 @@ a:hover {
   .frame-five {
     object-fit:contain; 
     float:left;  
-    padding-left: 9%;
-    padding-top: 45%;
-    width:50%;
-    height:50%;
+    padding-left: 20%;
+    padding-top: 25%;
+    width:55%;
+    height:55%;
   }
 
   .frame-six {
     object-fit:contain; 
     float:left;  
-    padding-left: 38%;
-    padding-top: 5%;
-    width:26%;
-    height:26%;
+    padding-left: 8%;
+    padding-top: 100%;
+    width:40%;
+    height:40%;
   }
 
   .frame-seven {
     object-fit:contain; 
     float:right;  
-    padding-right: 7%;
-    padding-top: 5%;
-    width:26%;
-    height:26%;
+    padding-right: 8%;
+    padding-top: 100%;
+    width:40%;
+    height:40%;
   }
 
 
   .frame-eight {
     
-    padding-top:1%;
-    padding-left:15%;
+    padding-top:30%;
+    padding-left:2%;
     object-fit: contain;
-    width:60%;
-    height:60%;
+    width:95%;
+    height:95%;
     
     
   }
 
-  .frame-nine {
-    
-    padding-top:4%;
-    padding-left:10%;
-    object-fit: contain;
-    width:44%;
-    height:44%;
-    
-    
-  }
-
-  .frame-ten {
-    float:right;
-    padding-top:20%;
-    padding-right:5%;
-    object-fit: contain;
-    height:65%;
-    width:65%;
-    
-  }
+ 
 
   .frame-eleven {
     float:right;
-    padding-top:3%;
-    padding-right:14%;
+    padding-top:27%;
+    padding-right:5%;
     object-fit: contain;
-    height:34%;
-    width:34%;
+    height:42%;
+    width:42%;
     
   }
 
   .frame-twelve {
     float:left;
-    padding-top:27%;
-    padding-left:14%;
+    padding-top:85%;
+    padding-left:5%;
     object-fit: contain;
-    height:36%;
-    width:36%;
+    height:90%;
+    width:90%;
   
     
   }
 
   .frame-thirteen {
     float:left;
-    padding-top:3%;
-    padding-left:14%;
+    padding-top:38%;
+    padding-left:5%;
     object-fit: contain;
-    height:35%;
-    width:35%;
+    height:47%;
+    width:47%;
   
     
   }
 
   .frame-fourteen {
     float:left;
-    padding-top:5%;
-    padding-left:13%;
+    padding-top:27%;
+    padding-left:2%;
     object-fit: contain;
-    height:23%;
-    width:23%;
+    height:50%;
+    width:50%;
     
   }
   .frame-fifteen {
     float:left;
-    padding-top:5%;
-    padding-left:36%;
+    padding-top:27%;
+    padding-left:48%;
     object-fit: contain;
-    height:29%;
-    width:29%;
+    height:50%;
+    width:50%;
     
   }
   .frame-sixteen {
