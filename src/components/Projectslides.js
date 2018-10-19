@@ -29,19 +29,19 @@ const Page = ({ offset, caption, first, second, specs_link, test_url, specs_one,
     {/*copy*/}
 
       <Parallax.Layer horizontal offset={offset} speed={3.5}>
-        <div className='p-container'>
+        <div className='p-text-container'>
           <h3 className='p-headline'>{caption}</h3>
         </div>
       </Parallax.Layer>
 
       <Parallax.Layer horizontal offset={offset} speed={2}>
-        
-          <sm className='p-copy'>{first}</sm>
-        
+        <div className='p-text-container'>
+          <p className='p-copy'>{first}</p>
+        </div>
       </Parallax.Layer>
 
         <Parallax.Layer horizontal offset={offset} speed={2}>  
-        <div className='p-container'>  
+        <div className='p-text-container'>  
         <div className='specs-one' >   
           <p>{specs_one}</p>
           <p >{specs_two}</p>

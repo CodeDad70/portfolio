@@ -264,6 +264,7 @@ a:hover {
   }
 
   /*this frame is invisible in mobile */
+
   .frame-two {
     object-fit:contain; 
     float:left;
@@ -321,7 +322,7 @@ a:hover {
 
   .frame-eight {
     
-    padding-top:30%;8
+    padding-top:30%;
     padding-left:2%;
     object-fit: contain;
     width:95%;
@@ -393,6 +394,7 @@ a:hover {
   }
 
   /*this frame is invisible in mobile*/
+
   .frame-seventeen {
     float:left;
     padding-top:27%;
@@ -413,6 +415,7 @@ a:hover {
     width:0%;
     
   }
+
   .frame-nineteen {
     float:left;
     padding-top:75%;
@@ -458,7 +461,7 @@ a:hover {
     height:30%;
   }
 
-  .frame-four {601
+  .frame-four {     
     object-fit:contain; 
     float:right;  
     padding-right: 25%;
