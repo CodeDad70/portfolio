@@ -16,13 +16,9 @@
  
 
 
-
-
-
-
 /* Phones */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
 
   .p-frame-one {
     float:left; 
@@ -69,7 +65,6 @@
 }
 
 
-
 .specs-link {
   color:black;
   float:left;
@@ -97,24 +92,24 @@
 
 }
 
-/***tablets and desktop **/
+/***reg tablets and narrower desktop **/
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 701px) and (max-width:1599px) {
 
   .p-frame-one {
     
     float:left; 
-    padding-top:8%;
-    padding-left:20%;
+    padding-top:10%;
+    padding-left:15%;
     object-fit: contain;
-    width:30%;
-    height:30%;
+    width:40%;
+    height:40%;
   
   }
 
   .p-headline {
     float:left; 
-    padding-left:20%;
+    padding-left:15%;
     font-size: 2em;
     color: rgb(38, 32, 75);
     text-transform: uppercase;
@@ -124,8 +119,8 @@
   .p-copy {
     line-height:12px;
     float:left;
-    padding-top: 6.25%;
-    padding-left:20%;
+    padding-top: 5.25%;
+    padding-left:15%;
     font-size: 1em;
     color: rgb(62, 59, 83);
     
@@ -139,15 +134,15 @@
   .specs-link {
     color:black;
     float:left;
-    padding-top:22%;
-    padding-left:48%;
+    padding-top:45%;
+    padding-left:9%;
   }
   
   .specs-link-one {
     color:black;
     float:left;
-    padding-top:22%;
-    padding-left:52%;
+    padding-top:45%;
+    padding-left:15%;
   }
   
   .specs-one {
@@ -156,9 +151,74 @@
     color:black;
     line-height:14px;
     float:left;
-    padding-left:52%;
-    padding-top:8%
+    padding-left:58%;
+    padding-top:10%
   
   }
   
+}
+
+
+
+
+/***wide tablets and full screen desktop **/
+
+
+@media only screen and (min-width: 1600px) {
+
+  .p-frame-one {
+    
+    float:left; 
+    padding-top:6%;
+    padding-left:15%;
+    object-fit: contain;
+    width:40%;
+    height:40%;
+  
   }
+
+  .p-headline {
+    float:left; 
+    padding-left:15%;
+    font-size: 2em;
+    color: rgb(38, 32, 75);
+    text-transform: uppercase;
+    padding-top: 1%;
+  }
+  
+  .p-copy {
+    line-height:12px;
+    float:left;
+    padding-top: 4%;
+    padding-left:15%;
+    font-size: 1em;
+    color: rgb(62, 59, 83);
+    
+  }
+  
+  .specs-link {
+    color:black;
+    float:left;
+    padding-top:42%;
+    padding-left:11%;
+  }
+  
+  .specs-link-one {
+    color:black;
+    float:left;
+    padding-top:42%;
+    padding-left:15%;
+  }
+  
+  .specs-one {
+    font-size:1.5em;
+    width:30%;
+    color:black;
+    line-height:14px;
+    float:left;
+    padding-left:58%;
+    padding-top:7%
+  
+  }
+  
+}
