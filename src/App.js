@@ -19,10 +19,10 @@ const App = () => (
           <Route exact path="/" render={() => <Redirect to="/welcome" />} />
           
           <ul className="nav">   
-          <span className='logo-box'><h3 className ='logo'>ES DESIGN</h3></span>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/designs">Designs</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+          <div className='logo-box'><h3 className ='logo'>ES DESIGN</h3></div>
+            <NavLink to="/projects" className='nav-element'>Projects</NavLink>
+            <NavLink to="/designs" className='nav-element'>Designs</NavLink>
+            <NavLink to="/contact" className='nav-element'>Contact</NavLink>
           </ul>
           <div className="content">
             <Transition
