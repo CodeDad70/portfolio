@@ -277,7 +277,7 @@ a:hover {
     object-fit:contain; 
     float:left;  
     padding-left:1.5%;
-    padding-top: 25%;
+    padding-top: 22%;
     width:95%;
     height:95%;
   }
@@ -286,7 +286,7 @@ a:hover {
     object-fit:contain; 
     float:left;  
     padding-left: 1.5%;
-    padding-top: 95%;
+    padding-top: 87%;
     width:95%;
     height:95%;
   }
@@ -294,17 +294,17 @@ a:hover {
   .frame-five {
     object-fit:contain; 
     float:left;  
-    padding-left: 20%;
-    padding-top: 25%;
-    width:55%;
-    height:55%;
+    padding-left: 24%;
+    padding-top: 22%;
+    width:51%;
+    height:51%;
   }
 
   .frame-six {
     object-fit:contain; 
     float:left;  
     padding-left: 8%;
-    padding-top: 100%;
+    padding-top: 90%;
     width:40%;
     height:40%;
   }
@@ -313,7 +313,7 @@ a:hover {
     object-fit:contain; 
     float:right;  
     padding-right: 8%;
-    padding-top: 100%;
+    padding-top: 90%;
     width:40%;
     height:40%;
   }
@@ -321,7 +321,7 @@ a:hover {
 
   .frame-eight {
     
-    padding-top:30%;
+    padding-top:30%;8
     padding-left:2%;
     object-fit: contain;
     width:95%;
