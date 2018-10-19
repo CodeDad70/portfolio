@@ -333,53 +333,57 @@ a:hover {
     padding-top:27%;
     padding-left:2%;
     object-fit: contain;
-    height:50%;
-    width:50%;
+    height:48%;
+    width:48%;
     
   }
   .frame-fifteen {
     float:left;
     padding-top:27%;
-    padding-left:48%;
+    padding-left:50%;
     object-fit: contain;
-    height:50%;
-    width:50%;
+    height:48%;
+    width:48%;
     
   }
   .frame-sixteen {
     float:right;
-    padding-right:13%;
-    padding-top:5%;
+    padding-right:2%;
+    padding-top:75%;
     object-fit: contain;
-    height:23%;
-    width:23%;
+    height:48.75%;
+    width:48.75%;
     
   }
+
+  /*this frame is invisible in mobile*/
   .frame-seventeen {
     float:left;
     padding-top:27%;
     padding-left:36%;
     object-fit: contain;
-    height:28%;
-    width:28%;
+    height:0%;
+    width:0%;
     
   }
+
+  /*this frame is invisible in mobile*/
   .frame-eighteen {
     float:left;
     padding-left:13%;
     padding-top:27%;
     object-fit: contain;
-    height:23%;
-    width:23%;
+    height:0%;
+    width:0%;
     
   }
   .frame-nineteen {
-    float:right;
-    padding-top:27%;
-    padding-right:13%;
+    float:left;
+    padding-top:75%;
+    padding-left:2%;
     object-fit: contain;
-    height:23%;
-    width:23%;
+    height:47.75%;
+    width:47.75%;
     
   }
 
