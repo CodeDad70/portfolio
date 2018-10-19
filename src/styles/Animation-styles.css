@@ -62,17 +62,8 @@ a:hover {
   align-self: center;
   flex: 1;
   list-style-type: none;
-  padding: 10px;
   
 }
-
-.navItemUltra {
-  margin-top: 64px;
-}
-
-
-
-
 
 
 /* Parallax */
@@ -88,85 +79,118 @@ a:hover {
 
 /* Nav */
 
-.arrow-forward {
-  padding: 1% 1% 0 0;
-  float:right;
-  opacity: .5;
-  cursor:pointer;
-  
-}
+  .arrow-forward {
+    padding: 1% 1% 0 0;
+    float:right;
+    opacity: .5;
+    cursor:pointer;
+    
+  }
 
 
-.arrow-forward:hover {
-  
-  padding: 1% 1% 0 0;
-  float:right;
-  opacity: 1;  
-  cursor:pointer;
-}
+  .arrow-forward:hover {
+    
+    padding: 1% 1% 0 0;
+    float:right;
+    opacity: 1;  
+    cursor:pointer;
+  }
 
-.arrow-back {
-  padding-top:2%;
-  margin-left:2%;
-  opacity: .5;
-  float:left; 
-  cursor:pointer;
-}
+  .arrow-back {
+    padding-top:2%;
+    margin-left:2%;
+    opacity: .5;
+    float:left; 
+    cursor:pointer;
+  }
 
-.arrow-back:hover {
-  padding-top:2%;
-  margin-left:2%;
-  opacity: 1;
-  float:left; 
-  cursor:pointer;
-}
+  .arrow-back:hover {
+    padding-top:2%;
+    margin-left:2%;
+    opacity: 1;
+    float:left; 
+    cursor:pointer;
+  }
 
-.restart {
-  padding: 1% 2% 0 0;
-  float:right;
-  opacity: .5;
-  cursor:pointer;
-  
-}
+  .restart {
+    padding: 1% 2% 0 0;
+    float:right;
+    opacity: .5;
+    cursor:pointer;
+    
+  }
 
-.restart:hover {
-  padding: 1% 2% 0 0;
-  float:right;
-  opacity: 1;
-  cursor:pointer;
-}
+  .restart:hover {
+    padding: 1% 2% 0 0;
+    float:right;
+    opacity: 1;
+    cursor:pointer;
+  }
 
 
 /* text foramtting */
 
-.headline {
-  float:left; 
-  padding-left:15%;
-  font-size: 2em;
-  color: rgb(38, 32, 75);
-  text-transform: uppercase;
-  padding-top: 1%;
+/* Phones */
+
+@media only screen and (max-width: 600px) {
+
+  .headline {
+    text-align:center;   
+    font-size: 1.5em;
+    color: rgb(38, 32, 75);
+    text-transform: uppercase;
+    padding-top: 18%;
+  }
+
+  .copy {
+    line-height:15px;
+    text-align:center;
+    font-size: .70em;
+    color: rgb(62, 59, 83);
+    padding-top: 100%;
+  }
+
+  .final-caption {
+    padding-top:5%;
+    font-size: 1em;
+    text-align:center;
+    color: rgb(38, 32, 75);
+      
+  }
+
+
 }
 
-.copy {
-  float:left;
-  padding-left:15%;
-  font-size: 1em;
-  color: rgb(62, 59, 83);
-  padding-top: 1%;
-}
+@media only screen and (min-width: 601px) {
 
-.final-caption {
-  font-size: 2em;
-  text-align:center;
-  color: rgb(38, 32, 75);
-    
-}
+  .headline {
+    float:left; 
+    padding-left:15%;
+    font-size: 2em;
+    color: rgb(38, 32, 75);
+    text-transform: uppercase;
+    padding-top: 1%;
+  }
 
-p {
-  font-size:.65em;
-}
+  .copy {
+    float:left;
+    padding-left:15%;
+    font-size: 1em;
+    color: rgb(62, 59, 83);
+    padding-top: 1%;
+  }
 
+  .final-caption {
+    font-size: 2em;
+    text-align:center;
+    color: rgb(38, 32, 75);
+      
+  }
+
+  p {
+    font-size:.65em;
+  }
+}
 
 /* Backgrounds */
 
@@ -182,196 +206,385 @@ p {
   background: rgb(255, 255, 255);
 }
 
-.slide-two {
-  
-  background:rgb(253, 253, 253)
- }
 
  /* slide images and frames */
 
+/* Phones */
 
-.frame-one {
+@media only screen and (max-width: 600px) {
+
+  .frame-one {
+    
+    padding-top:35%;
+    padding-left:5%;
+    object-fit: contain;
+    width:90%;
+    height:90%;
+  }
+
+  .frame-two {
+    object-fit:contain; 
+    float:left;
+    padding-left:5%;
+    padding-top: 30%;
+    width:50%;
+    height:50%;
+  }
+
+  .frame-three {
+    object-fit:contain; 
+    float:right;  
+    padding-right:25%;
+    padding-top: 5%;
+    width:30%;
+    height:30%;
+  }
+
+  .frame-four {
+    object-fit:contain; 
+    float:right;  
+    padding-right: 25%;
+    padding-top: 26%;
+    width:29%;
+    height:29%;
+  }
+
+  .frame-five {
+    object-fit:contain; 
+    float:left;  
+    padding-left: 9%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
+
+  .frame-six {
+    object-fit:contain; 
+    float:left;  
+    padding-left: 38%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
+
+  .frame-seven {
+    object-fit:contain; 
+    float:right;  
+    padding-right: 7%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
+
+
+  .frame-eight {
+    
+    padding-top:1%;
+    padding-left:15%;
+    object-fit: contain;
+    width:60%;
+    height:60%;
+    
+    
+  }
+
+  .frame-nine {
+    
+    padding-top:4%;
+    padding-left:10%;
+    object-fit: contain;
+    width:44%;
+    height:44%;
+    
+    
+  }
+
+  .frame-ten {
+    float:right;
+    padding-top:20%;
+    padding-right:5%;
+    object-fit: contain;
+    height:65%;
+    width:65%;
+    
+  }
+
+  .frame-eleven {
+    float:right;
+    padding-top:3%;
+    padding-right:14%;
+    object-fit: contain;
+    height:34%;
+    width:34%;
+    
+  }
+
+  .frame-twelve {
+    float:left;
+    padding-top:27%;
+    padding-left:14%;
+    object-fit: contain;
+    height:36%;
+    width:36%;
   
-  padding-top:5%;
-  padding-left:20%;
-  object-fit: contain;
-  width:60%;
-  height:60%;
+    
+  }
+
+  .frame-thirteen {
+    float:left;
+    padding-top:3%;
+    padding-left:14%;
+    object-fit: contain;
+    height:35%;
+    width:35%;
   
-  
+    
+  }
+
+  .frame-fourteen {
+    float:left;
+    padding-top:5%;
+    padding-left:13%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-fifteen {
+    float:left;
+    padding-top:5%;
+    padding-left:36%;
+    object-fit: contain;
+    height:29%;
+    width:29%;
+    
+  }
+  .frame-sixteen {
+    float:right;
+    padding-right:13%;
+    padding-top:5%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-seventeen {
+    float:left;
+    padding-top:27%;
+    padding-left:36%;
+    object-fit: contain;
+    height:28%;
+    width:28%;
+    
+  }
+  .frame-eighteen {
+    float:left;
+    padding-left:13%;
+    padding-top:27%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-nineteen {
+    float:right;
+    padding-top:27%;
+    padding-right:13%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+
 }
 
-.frame-two {
-  object-fit:contain; 
-  float:left;
-  padding-left:15%;
-  padding-top: 5%;
-  width:30%;
-  height:30%;
-}
+/* Tablets and Desktop */
 
-.frame-three {
-  object-fit:contain; 
-  float:right;  
-  padding-right:25%;
-  padding-top: 5%;
-  width:30%;
-  height:30%;
-}
+@media only screen and (min-width: 601px) {
 
-.frame-four {
-  object-fit:contain; 
-  float:right;  
-  padding-right: 25%;
-  padding-top: 26%;
-  width:29%;
-  height:29%;
-}
+  .frame-one {
+    
+    padding-top:5%;
+    padding-left:20%;
+    object-fit: contain;
+    width:60%;
+    height:60%;
+    
+    
+  }
 
-.frame-five {
-  object-fit:contain; 
-  float:left;  
-  padding-left: 9%;
-  padding-top: 5%;
-  width:26%;
-  height:26%;
-}
+  .frame-two {
+    object-fit:contain; 
+    float:left;
+    padding-left:15%;
+    padding-top: 5%;
+    width:30%;
+    height:30%;
+  }
 
-.frame-six {
-  object-fit:contain; 
-  float:left;  
-  padding-left: 38%;
-  padding-top: 5%;
-  width:26%;
-  height:26%;
-}
+  .frame-three {
+    object-fit:contain; 
+    float:right;  
+    padding-right:25%;
+    padding-top: 5%;
+    width:30%;
+    height:30%;
+  }
 
-.frame-seven {
-  object-fit:contain; 
-  float:right;  
-  padding-right: 7%;
-  padding-top: 5%;
-  width:26%;
-  height:26%;
-}
+  .frame-four {
+    object-fit:contain; 
+    float:right;  
+    padding-right: 25%;
+    padding-top: 26%;
+    width:29%;
+    height:29%;
+  }
+
+  .frame-five {
+    object-fit:contain; 
+    float:left;  
+    padding-left: 9%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
+
+  .frame-six {
+    object-fit:contain; 
+    float:left;  
+    padding-left: 38%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
+
+  .frame-seven {
+    object-fit:contain; 
+    float:right;  
+    padding-right: 7%;
+    padding-top: 5%;
+    width:26%;
+    height:26%;
+  }
 
 
-.frame-eight {
-  
-  padding-top:1%;
-  padding-left:15%;
-  object-fit: contain;
-  width:60%;
-  height:60%;
-  
-  
-}
+  .frame-eight {
+    
+    padding-top:1%;
+    padding-left:15%;
+    object-fit: contain;
+    width:60%;
+    height:60%;
+    
+    
+  }
 
-.frame-nine {
-  
-  padding-top:4%;
-  padding-left:10%;
-  object-fit: contain;
-  width:44%;
-  height:44%;
-  
-  
-}
+  .frame-nine {
+    
+    padding-top:4%;
+    padding-left:10%;
+    object-fit: contain;
+    width:44%;
+    height:44%;
+    
+    
+  }
 
-.frame-ten {
-  float:right;
-  padding-top:20%;
-  padding-right:5%;
-  object-fit: contain;
-  height:65%;
-  width:65%;
-  
-}
+  .frame-ten {
+    float:right;
+    padding-top:20%;
+    padding-right:5%;
+    object-fit: contain;
+    height:65%;
+    width:65%;
+    
+  }
 
-.frame-eleven {
-  float:right;
-  padding-top:3%;
-  padding-right:14%;
-  object-fit: contain;
-  height:34%;
-  width:34%;
-  
-}
+  .frame-eleven {
+    float:right;
+    padding-top:3%;
+    padding-right:14%;
+    object-fit: contain;
+    height:34%;
+    width:34%;
+    
+  }
 
-.frame-twelve {
-  float:left;
-  padding-top:27%;
-  padding-left:14%;
-  object-fit: contain;
-  height:36%;
-  width:36%;
- 
+  .frame-twelve {
+    float:left;
+    padding-top:27%;
+    padding-left:14%;
+    object-fit: contain;
+    height:36%;
+    width:36%;
   
-}
+    
+  }
 
-.frame-thirteen {
-  float:left;
-  padding-top:3%;
-  padding-left:14%;
-  object-fit: contain;
-  height:35%;
-  width:35%;
- 
+  .frame-thirteen {
+    float:left;
+    padding-top:3%;
+    padding-left:14%;
+    object-fit: contain;
+    height:35%;
+    width:35%;
   
-}
+    
+  }
 
-.frame-fourteen {
-  float:left;
-  padding-top:5%;
-  padding-left:13%;
-  object-fit: contain;
-  height:23%;
-  width:23%;
-  
-}
-.frame-fifteen {
-  float:left;
-  padding-top:5%;
-  padding-left:36%;
-  object-fit: contain;
-  height:29%;
-  width:29%;
-  
-}
-.frame-sixteen {
-  float:right;
-  padding-right:13%;
-  padding-top:5%;
-  object-fit: contain;
-  height:23%;
-  width:23%;
-  
-}
-.frame-seventeen {
-  float:left;
-  padding-top:27%;
-  padding-left:36%;
-  object-fit: contain;
-  height:28%;
-  width:28%;
-  
-}
-.frame-eighteen {
-  float:left;
-  padding-left:13%;
-  padding-top:27%;
-  object-fit: contain;
-  height:23%;
-  width:23%;
-  
-}
-.frame-nineteen {
-  float:right;
-  padding-top:27%;
-  padding-right:13%;
-  object-fit: contain;
-  height:23%;
-  width:23%;
-  
-}
+  .frame-fourteen {
+    float:left;
+    padding-top:5%;
+    padding-left:13%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-fifteen {
+    float:left;
+    padding-top:5%;
+    padding-left:36%;
+    object-fit: contain;
+    height:29%;
+    width:29%;
+    
+  }
+  .frame-sixteen {
+    float:right;
+    padding-right:13%;
+    padding-top:5%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-seventeen {
+    float:left;
+    padding-top:27%;
+    padding-left:36%;
+    object-fit: contain;
+    height:28%;
+    width:28%;
+    
+  }
+  .frame-eighteen {
+    float:left;
+    padding-left:13%;
+    padding-top:27%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
+  .frame-nineteen {
+    float:right;
+    padding-top:27%;
+    padding-right:13%;
+    object-fit: contain;
+    height:23%;
+    width:23%;
+    
+  }
 
+}

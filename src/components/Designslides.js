@@ -105,7 +105,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
 
     <Parallax.Layer horizontal offset={offset} speed={0.6}>
       <div className='container'>
-        <sm className='copy'>{first}</sm>
+        <p className='copy'>{first}</p>
         <p className='copy'>{second}</p> 
       </div>
     </Parallax.Layer>
@@ -142,7 +142,7 @@ class Designslides extends React.Component {
     return (
       <Parallax  ref="parallax" pages={10} horizontal scrolling={false}>
 
-        <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
+        <Page offset={0} background = "slide-one" frameOne = "frame-one" imagelink={slideOneA} caption="Client: Yoga Journal" first="Art direction and design of Special Interest Publications"  onClickForward={() => this.scroll(1)} onClickBack={() => this.scroll(0)} />
         
         <Page offset={1} background = "slide-one" frameTwo = "frame-two" frameThree = "frame-three" frameFour = "frame-four" imagelink={slideTwoA} imagelinkB={slideTwoC} imagelinkC={slideTwoD} imagelinkD={slideTwoD} caption="Client: Yoga Journal" first="Art direction and design of a Special Interest Publications"  onClickForward={() => this.scroll(2)} onClickBack={() => this.scroll(0)} />
         
