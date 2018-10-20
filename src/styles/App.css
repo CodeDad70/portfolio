@@ -38,3 +38,65 @@
     font-size: 1em;
   }
 }
+
+.welcome-icon-projects {
+  float: left;
+  margin-left: 14%;
+ 
+  opacity:1;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+.welcome-icon-projects:hover {
+  float: left;
+  margin-left: 14%;
+  opacity:.25;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+.welcome-icon-designs {
+  float: left;
+  opacity:1;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+.welcome-icon-designs:hover {
+  float: left;
+  opacity:.25;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+
+.welcome-icon-about {
+  float: left;
+  opacity:1;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+.welcome-icon-about:hover {
+  float: left;
+  opacity:.25;
+  padding:2%;
+  width: 20%;
+  height:20%
+}
+
+
+.nav-item {
+  text-decoration: none
+}
+
+.welcome-container{
+  width:100%;
+  height:60%  
+}

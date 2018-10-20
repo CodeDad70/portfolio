@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import About from '../images/Welcome_Page/Welcome_About_Square.jpg'
+import Projects from '../images/Welcome_Page/Welcome_Film_Square.jpg'
+import Designs from '../images/Welcome_Page/Welcome_Dive_Square.png'
 
 const Welcome = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
-    <div className="mainRouteItem">
-      <p className='headline'>Welcome</p>
-     
-    </div>
+   
+    <div className="welcome-container">
+     <NavLink to="/projects"><img className="welcome-icon-projects" src={Projects}/></NavLink>
+     <NavLink to="/designs"><img className="welcome-icon-designs" src={Designs}/></NavLink>
+     <NavLink to="/contact"><img className="welcome-icon-about" src={About}/></NavLink>
+     </div>
+    
     <Route
       render={({ location }) => (
         <div>
@@ -26,5 +32,10 @@ const Welcome = ({ style }) => (
   </animated.div>
 )
 
+const NavLink = props => (
+  <li className="navItem">
+    <Link {...props} style={{ cursor: 'pointer', color: 'inherit' }} />
+  </li>
+)
 
 export default Welcome;
