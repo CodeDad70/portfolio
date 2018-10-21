@@ -83,7 +83,7 @@ a:hover {
     float:right;
     opacity: .5;
     cursor:pointer;
-    
+    z-index:1
   }
 
 
@@ -101,6 +101,7 @@ a:hover {
     opacity: .5;
     float:left; 
     cursor:pointer;
+    z-index:1
   }
 
   .arrow-back:hover {

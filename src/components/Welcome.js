@@ -9,9 +9,11 @@ const Welcome = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
    
     <div className="welcome-container">
-     <NavLink to="/projects"><img className="welcome-icon-projects" src={Projects}/></NavLink>
-     <NavLink to="/designs"><img className="welcome-icon-designs" src={Designs}/></NavLink>
-     <NavLink to="/contact"><img className="welcome-icon-about" src={About}/></NavLink>
+      
+     <div><NavLink to="/projects"><img className="welcome-icon-projects" src={Projects}/></NavLink></div>
+     <div><NavLink to="/designs"><img className="welcome-icon-designs" src={Designs}/></NavLink></div>
+     <div><NavLink to="/contact"><img className="welcome-icon-about" src={About}/></NavLink> </div>
+     
      </div>
     
     <Route

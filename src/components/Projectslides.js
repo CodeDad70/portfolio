@@ -40,15 +40,15 @@ const Page = ({ offset, caption, first, second, specs_link, test_url, specs_one,
         </div>
       </Parallax.Layer>
 
-        <Parallax.Layer horizontal offset={offset} speed={2}>  
+      <Parallax.Layer horizontal offset={offset} speed={2}>  
         <div className='p-text-container'>  
-        <div className='specs-one' >   
-          <p>{specs_one}</p>
-          <p >{specs_two}</p>
-          <p >{specs_three}</p>
-          <p >{specs_four}</p>
-          </div>
-          </div>
+          <div className='specs-one' >   
+            <p>{specs_one}</p>
+            <p >{specs_two}</p>
+            <p >{specs_three}</p>
+            <p >{specs_four}</p>
+            </div>
+        </div>
       </Parallax.Layer>
 
 
@@ -68,11 +68,16 @@ const Page = ({ offset, caption, first, second, specs_link, test_url, specs_one,
         }
 
         {offset ===0 &&
+         
+        
          <div className="specs-link-one"> <a href={specs_link} target="_blank">Visit this site</a></div>
+        
         }
 
         {offset !==0 &&
+       
          <div className="specs-link"> <a href={specs_link} target="_blank">Visit this site</a></div>
+         
         }
           
        </Parallax.Layer>

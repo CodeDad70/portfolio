@@ -1,5 +1,6 @@
 /*Phones */ 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 700px) {
   .logo {
     font-size: 1em;
     color: rgb(255, 233, 111);
@@ -15,11 +16,84 @@
    .nav-element {
      font-size: .70em;
    }
+
+   .welcome-icon-projects {
+    margin:0 auto;
+    display:block;
+    padding-top:10%;
+    padding-bottom:5%;
+   
+    opacity:1;
+    
+    width:40%;
+    height:40%
+  }
+  
+  .welcome-icon-projects:hover {
+    margin:0 auto;
+    display:block;
+    padding-top:10%;
+    padding-bottom:5%;
+   
+    opacity:.25;
+    
+    width: 40%;
+    height:40%
+  }
+  
+  .welcome-icon-designs {
+    margin:0 auto;
+    display:block;
+    padding-bottom:5%;
+    
+    opacity:1;
+    
+    width: 40%;
+    height:40%
+  }
+  
+  .welcome-icon-designs:hover {
+    margin:0 auto;
+    display:block;
+    padding-bottom:5%;
+
+    opacity:.25;
+    width: 40%;
+    height:40%
+  }
+  
+  
+  .welcome-icon-about {
+    margin:0 auto;
+    display:block;
+    
+   
+    opacity:1;
+    width: 40%;
+    height:40%
+  }
+  
+  .welcome-icon-about:hover {
+    margin:0 auto;
+
+    display:block;
+    opacity:.25;
+    
+    
+    width: 40%;
+    height:40%
+  }
+  
+  .welcome-container{
+   
+    width:100%;
+    height:100%  
+  }  
   
 } 
 
 /*Tablets and Desktop  */
-@media only screen and (min-width: 601px) { 
+@media only screen and (min-width: 701px)  { 
   .logo {
     font-size: 1.65em;
     color: rgb(255, 233, 111);
@@ -27,9 +101,9 @@
     letter-spacing: 5px;
     padding-left:20px;
     padding-right:20px;  
-  }
+  } */
 
-  .logo-box {
+.logo-box {
     
     background: linear-gradient(to left, tomato 0%, gold 100%);
   }
@@ -37,7 +111,7 @@
   .nav-element {
     font-size: 1em;
   }
-}
+
 
 .welcome-icon-projects {
   float: left;
@@ -91,12 +165,9 @@
   height:20%
 }
 
-
-.nav-item {
-  text-decoration: none
-}
-
 .welcome-container{
   width:100%;
   height:60%  
 }
+}
+
