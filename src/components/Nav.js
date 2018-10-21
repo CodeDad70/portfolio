@@ -10,7 +10,7 @@ const Nav = () => {
         <div className='logo-box'><h3 className ='logo'>ES DESIGN</h3></div>
         <NavLink to="/projects" className='nav-element'>Projects</NavLink>
         <NavLink to="/designs" className='nav-element'>Designs</NavLink>
-        <NavLink to="/contact" className='nav-element'>Contact</NavLink>
+        <NavLink to="/about" className='nav-element'>About</NavLink>
       </ul>
     
     </div>

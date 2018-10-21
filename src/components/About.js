@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Transition, config, animated } from 'react-spring'
 import { HashRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import About_Pic from '../images/About_Pic.jpg'
 
 const Contact = ({ style }) => (
   <animated.div className="mainRoute" style={{ ...style, background: `#fff` }}>
     <div className="mainRouteItem">
-      <p className="headline">Contact</p>
+    <img className="about-image" src={About_Pic}/>
      
     </div>
     <Route

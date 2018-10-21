@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Nav from './components/Nav'
 import Projects from './components/Projects';
 import Designs from './components/Designs'
-import Contact from './components/Contact'
+import About from './components/About'
 import Welcome from './components/Welcome'
 import './styles/Animation-styles.css'
 import './styles/Project-styles.css'
@@ -32,7 +32,7 @@ const App = () => (
                   <Route path="/welcome" render={props => Welcome({ ...props, style })} />
                   <Route path="/projects" render={props => Projects({ ...props, style })} />
                   <Route path="/designs" render={props => Designs({ ...props, style })} />
-                  <Route path="/contact" render={props => Contact({ ...props, style })} />
+                  <Route path="/about" render={props => About({ ...props, style })} />
                   
                 </Switch>
               )}
