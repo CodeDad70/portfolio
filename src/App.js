@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Designs from './components/Designs'
 import About from './components/About'
 import Welcome from './components/Welcome'
+import './styles/index.css'
 import './styles/Animation-styles.css'
 import './styles/Project-styles.css'
 import './styles/App.css'
