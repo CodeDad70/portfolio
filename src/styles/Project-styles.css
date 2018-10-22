@@ -99,7 +99,7 @@
   .p-frame-one {
     
     float:left; 
-    padding-top:6%;
+    padding-top:8%;
     padding-left:15%;
     object-fit: contain;
     width:35%;
@@ -127,7 +127,7 @@
     
     
     float:left;
-    padding-top: 4.5%;
+    padding-top: 5%;
     padding-left:15%;
     font-size: 1em;
     color: rgb(62, 59, 83);
@@ -138,7 +138,7 @@
   .specs-link {
     color:black;
     float:left;
-    padding-top:38%;
+    padding-top:40%;
     padding-left:10%;
   }
   

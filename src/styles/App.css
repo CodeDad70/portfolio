@@ -245,7 +245,7 @@
     margin:0 auto;
     display:block;
     padding-top:2%;
-    width:30%;
+    width:28%;
   }
 
   .about-text {
@@ -259,7 +259,7 @@
 
   .icon-container {
     float:left;
-    padding-left:31%;
+    padding-left:35%;
     
     margin: 0 auto;
     width:100%;
@@ -270,14 +270,14 @@
   .email {
     padding: 2%;
     margin: 0 auto;
-    width:8%;
+    width:6%;
    
   }
 
   .linkedin {
     padding: 2%;
     margin: 0 auto;
-    width:8%;
+    width:6%;
     
     
    
@@ -286,7 +286,7 @@
   .github {
     padding: 2%;
     margin: 0 auto;
-    width:8%;
+    width:6%;
   }
 
   
