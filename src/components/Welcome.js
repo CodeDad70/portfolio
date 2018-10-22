@@ -12,7 +12,7 @@ const Welcome = ({ style }) => (
       
      <div><NavLink to="/projects"><img className="welcome-icon-projects" src={Projects}/></NavLink></div>
      <div><NavLink to="/designs"><img className="welcome-icon-designs" src={Designs}/></NavLink></div>
-     <div><NavLink to="/contact"><img className="welcome-icon-about" src={About}/></NavLink> </div>
+     <div><NavLink to="/about"><img className="welcome-icon-about" src={About}/></NavLink> </div>
      
      </div>
     
