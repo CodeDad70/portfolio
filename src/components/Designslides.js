@@ -122,7 +122,7 @@ const Page = ({ offset, caption, first, second, finalCaption, finalCopy, backgro
 
     <Parallax.Layer offset={offset} speed={0.4} >   
       {offset!==0  &&  
-        <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={90} color='black' onClick={onClickBack}/>
+        <Icon path={mdiArrowRightThick} className = "arrow-back" size={1.5} rotate={180} color='black' onClick={onClickBack}/>
       }
 
       {offset!==9 &&         
